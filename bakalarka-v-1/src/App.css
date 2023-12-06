@@ -29,9 +29,10 @@ div {
   padding-right: 35px;
 }
 
-.imageHL {
-  
-  padding-left: 40px;
+.unizaLogo {
+  margin-left: 20px;
+
+  height: 69px;
 }
 
 
@@ -97,6 +98,5 @@ h2 {
   align-items: flex-start;
   gap: 8px;
 }
-
 
 /*random pridanie komentu*/
