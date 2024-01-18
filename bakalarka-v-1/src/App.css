@@ -2,6 +2,7 @@ div {
   align-items: center;
 }
 
+
 .pozadieHL1 {
   background-color: #223673;
   top: 0;
@@ -34,7 +35,6 @@ div {
 
   height: 69px;
 }
-
 
 h1 {
   color: #FFF;
@@ -98,5 +98,6 @@ h2 {
   align-items: flex-start;
   gap: 8px;
 }
+
 
 /*random pridanie komentu*/

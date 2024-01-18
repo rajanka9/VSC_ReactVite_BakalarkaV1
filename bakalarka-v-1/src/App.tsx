@@ -1,23 +1,41 @@
-/* import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg' */
+//import './Components/NavBar1.css';
+//import NavBar1 from "./Components/NavBar1"
+//import React from 'react';
+
+// malo by byt v komponente
+//import { Link, Outlet} from "react-router-dom";
+
 import './App.css'
-import unizaLogo from "./assets/unizaLogo.png"
 
-export default function MyApp() {
+import { Route, Routes } from 'react-router-dom';
+import {Hodnotenie} from "./Pages/Hodnotenie";
+import {NavBar1} from './Components/NavBar1';
+import {HomePage} from "./Pages/HomePage";
+
+// https://medium.com/@galohernandez/vite-react-react-router-dom-the-latest-way-312ee887197e 
+function App() {
   return (
-    <div>
-      <HornaLista1 />
-      <HornaLista2 />
-
+    <div className="App">
+    <NavBar1 />
+    
+    <Routes>
+    <Route path="/" element={<HomePage />}/>
+    <Route path="/hodnotenie" element={<Hodnotenie />} />
+    </Routes>
+      
     </div>
-  );
+      
+  
+    );
 }
 
-const HornaLista1 = () => {
+/* const HornaLista1 = () => {
   return (
     <div className='pozadieHL1'>
-        <img className='unizaLogo' src={unizaLogo} alt='Logo Zilinskej univerzity'/>
+
+        <Link to={"/HomePage"}>
+          <img className='unizaLogo' src={unizaLogo} alt='Logo Zilinskej univerzity'/>
+         </Link>
 
         <h1 className='textHL'> 
           Principy operacnych systemov
@@ -80,31 +98,39 @@ const HornaLista2 = () => {
   );
 
 }
+ */
+
+export default App;
 
 
-//const [count, setCount] = useState(0)
+// Passing Data via Links in React: A Guide to Effective Data Transfer
+// https://medium.com/@hammadrao891/passing-data-via-links-in-react-a-guide-to-effective-data-transfer-1e0b030e2a12
 
- /*  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Menim co je tu dole a automaticky sa meni stav
-      </p>
-    </>
-  ) */
+// React + .NET Core Finance Project: App Overview 
+// https://www.youtube.com/playlist?list=PL82C6-O4XrHcNJd4ejg8pX5fZaIDZmXyn 
+
+//  How I Would Learn React From Scratch In 2023 
+// https://www.youtube.com/watch?v=a7YYJVGBy6A&t=111s
+
+// React JC crash course 2024 for beginners
+// https://www.youtube.com/watch?v=HVFSgIVXcD4
+
+// Responsive Navbar in React using React Router | Beginner Tutorial 
+// https://www.youtube.com/watch?v=17l6AOc8s10 
+
+
+// --------------------------------------------------------------------------------------
+// Otvorene linky
+
+// https://www.youtube.com/watch?v=17l6AOc8s10 
+// https://github.com/CodeCompleteYT/react-navbar/blob/main/src/App.jsx
+
+// https://reactrouter.com/en/main/start/tutorial#setup 
+// https://blog.logrocket.com/react-router-v6-guide/ 
+
+// https://medium.com/@galohernandez/vite-react-react-router-dom-the-latest-way-312ee887197e 
+// https://medium.com/@factwiths/react-router-dom-navigating-your-web-app-2729b1a1575b
+// https://baisali-pradhan.medium.com/lets-find-the-path-in-react-b0893ccdcc9f
+// https://medium.com/@hammadrao891/passing-data-via-links-in-react-a-guide-to-effective-data-transfer-1e0b030e2a12
+
+// https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options?utm_source=mozilla&utm_medium=firefox-console-errors&utm_campaign=default 
