@@ -7,24 +7,41 @@
 
 import './App.css'
 
-import { Route, Routes } from 'react-router-dom';
 import {Hodnotenie} from "./Pages/Hodnotenie";
 import {NavBar1} from './Components/NavBar1';
 import {HomePage} from "./Pages/HomePage";
+
+import {createBrowserRouter} from 'react-router-dom';
+
+export const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    loader: async () => {return "hi there";},
+  },
+  {
+    path: "/home",
+    element: <HomePage />,
+    loader:async () => {
+      return "hi there2";
+    }
+  },
+  {
+    path: "/hodnotenie",
+    element: <Hodnotenie />,
+    loader:async () => {
+      return "hi there2";
+    }
+  }
+])
 
 // https://medium.com/@galohernandez/vite-react-react-router-dom-the-latest-way-312ee887197e 
 function App() {
   return (
     <div className="App">
     <NavBar1 />
-    
-    <Routes>
-    <Route path="/" element={<HomePage />}/>
-    <Route path="/hodnotenie" element={<Hodnotenie />} />
-    </Routes>
-      
     </div>
-      
+    
   
     );
 }
@@ -101,6 +118,7 @@ const HornaLista2 = () => {
  */
 
 export default App;
+
 
 
 // Passing Data via Links in React: A Guide to Effective Data Transfer

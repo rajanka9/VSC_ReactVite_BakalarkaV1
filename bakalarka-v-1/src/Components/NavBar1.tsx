@@ -14,7 +14,7 @@ export const NavBar1 = () => {
           <img className='unizaLogo' src={unizaLogo} alt='Logo Zilinskej univerzity'/>
          </Link>
 
-        <NavLink to="/homePage">
+        <NavLink to="/home">
         <h1 className='textHL'>           
             Principy operacnych systemov
           </h1>
