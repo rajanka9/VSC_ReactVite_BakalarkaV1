@@ -7,9 +7,15 @@
 
 import './App.css'
 
-import {Hodnotenie} from "./Pages/Hodnotenie";
+      /*{trieda} from nazov suboru*/
 import {NavBar1} from './Components/NavBar1';
+import {NavBar2} from './Components/NavBar2';
+
 import {HomePage} from "./Pages/HomePage";
+import {Hodnotenie} from "./Pages/Hodnotenie";
+import {Materialy} from "./Pages/Materialy";
+import {Nastavenia} from "./Pages/Nastavenia";
+import {TerminyRozvrh} from "./Pages/TerminyRozvrh"
 
 import {createBrowserRouter} from 'react-router-dom';
 
@@ -19,6 +25,7 @@ export const router = createBrowserRouter([
     element: <App />,
     loader: async () => {return "hi there";},
   },
+
   {
     path: "/home",
     element: <HomePage />,
@@ -26,96 +33,54 @@ export const router = createBrowserRouter([
       return "hi there2";
     }
   },
+
+  {
+    path: "/terminyRozvrh",
+    element: <TerminyRozvrh />,
+    loader:async () => {
+      return "hi there2";
+    }
+  },
+
   {
     path: "/hodnotenie",
     element: <Hodnotenie />,
     loader:async () => {
-      return "hi there2";
+      return "hi there3";
     }
-  }
+  },
+
+  {
+    path: "/materialy",
+    element: <Materialy />,
+    loader:async () => {
+      return "hi there4";
+    }
+  },
+
+  {
+    path: "/nastavenia",
+    element: <Nastavenia />,
+    loader:async () => {
+      return "hi there5";
+    }
+  },
 ])
 
 // https://medium.com/@galohernandez/vite-react-react-router-dom-the-latest-way-312ee887197e 
 function App() {
   return (
-    <div className="App">
-    <NavBar1 />
-    </div>
+    <div className="App"> 
+      <NavBar1 />
+      <NavBar2 />
+
+      <div className='podListami'>
+        <h4> Welcome </h4>
+      </div>
     
-  
-    );
-}
-
-/* const HornaLista1 = () => {
-  return (
-    <div className='pozadieHL1'>
-
-        <Link to={"/HomePage"}>
-          <img className='unizaLogo' src={unizaLogo} alt='Logo Zilinskej univerzity'/>
-         </Link>
-
-        <h1 className='textHL'> 
-          Principy operacnych systemov
-        </h1>
     </div>
   );
-
-};
-
-const HornaLista2 = () => {
-  return (
-    <div className='pozadieHL2'>
-        <div className='frame1'>
-        
-        <div className='divProfile'>
-        <h2> 
-          ...
-        </h2>
-        <h2> 
-          Jana Radikova 5ZYR31
-        </h2>
-        </div>
-
-        <h2> 
-          Terminy/Rozvrh
-        </h2>
-
-        <h2> 
-          Hodnotenie
-        </h2>
-
-        <h2> 
-          Materialy
-        </h2>
-        
-        <h2> 
-          Nastavenia
-        </h2>
-        </div>
-
-        <div className='frame2'>  
-          <div className='jazyky'>
-          <h2> 
-          SK
-          </h2>
-          <h2> 
-          /
-          </h2>
-          <h2> 
-          EN
-          </h2>
-          </div>
-
-          <h2> 
-          Odhlasenie
-          </h2>
-        </div>
-
-    </div>
-  );
-
 }
- */
 
 export default App;
 

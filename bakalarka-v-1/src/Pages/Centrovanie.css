@@ -1,0 +1,54 @@
+.centrovanie {
+    align-items: center;
+}
+
+.divPodListami {
+    position: absolute;
+    display: flex; 
+    justify-content: center; /* Center the flex items (centered-div) horizontally */
+    align-items: space-evenly; /* Center the flex items (centered-div) vertically */
+    width: 94vw;
+    
+    margin-inline-end: 3%;
+    margin-inline-start: 3%;
+
+     }
+
+  .divFrameText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.625em; 
+
+    }
+
+
+  h4 {
+    color: #000;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem; /*32px*/
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  h5 {
+    color: #000;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem; /*24px*/
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  p {
+    color: #000;
+    text-align: start;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem; /*14px*/
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }

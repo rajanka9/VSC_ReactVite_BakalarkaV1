@@ -10,12 +10,10 @@ export const NavBar1 = () => {
     return (
       <div className='pozadieHL1'>
 
-        <Link to={"/hodnotenie"}>
-          <img className='unizaLogo' src={unizaLogo} alt='Logo Zilinskej univerzity'/>
-         </Link>
+        <img className='unizaLogo' src={unizaLogo} alt='Logo Zilinskej univerzity'/>
 
         <NavLink to="/home">
-        <h1 className='textHL'>           
+          <h1 className='h1'>           
             Principy operacnych systemov
           </h1>
         </NavLink>

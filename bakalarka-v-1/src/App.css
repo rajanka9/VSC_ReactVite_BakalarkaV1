@@ -1,102 +1,28 @@
-div {
-  align-items: center;
+.App {
+  place-items: center;
+
 }
 
-
-.pozadieHL1 {
-  background-color: #223673;
-  top: 0;
+.podListami {
   position: absolute;
-
-  display: flex;
-  justify-content: space-between;
-
-  width: 100%;
-  height: 85px;
-  flex-shrink: 0;
-
+  display: flex; 
+  justify-content: space-evenly; /* Center the flex items (centered-div) horizontally */
+  align-items: center; /* Center the flex items (centered-div) vertically */
+  width: 98vw;
+  
+  margin-inline-end: 3%;
+  margin-inline-start: 3%;
+  
 }
 
-.textHL {
-  color: #FFF;
-  text-align: center;
-  font-family: Open Sans;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-
-  position: center;
-  padding-right: 35px;
-}
-
-.unizaLogo {
-  margin-left: 20px;
-
-  height: 69px;
-}
-
-h1 {
-  color: #FFF;
-  text-align: center;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-
-  font-family: 'Open Sans', sans-serif;
-}
-
-h2 {
-  color: #000;
+.h3 {
+  color: #000000;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
+  font-size: 2rem; /*16px*/
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: normal;
-}
-
-.pozadieHL2 {
-  background-color: #FEB81C;;
-  top: 85px;
-  position: absolute;
-
-  display: flex;
-  justify-content: space-between;
-
-  width: 100%;
-  height: 60px;
-  flex-shrink: 0;
-
-}
-
-.frame1 {
-  display: inline-flex;
-  align-items: flex-start;
-  gap: 20px;
-
-  padding-left: 35px;
-}
-
-.divProfile{
-  display: inline-flex;
-  align-items: flex-start;
-  gap: 12.5px;
-}
-
-.frame2 {
-  display: inline-flex;
-  align-items: flex-start;
-  gap: 20px;
-
-  padding-right: 35px;
-}
-
-.jazyky{
-  display: inline-flex;
-  align-items: flex-start;
-  gap: 8px;
 }
 
 

@@ -1,17 +1,21 @@
 import React from "react";
-import { NavBar1 } from "../Components/NavBar1";
+
+import "./Centrovanie.css"
+import { NavBar1 } from '../Components/NavBar1';
+import { NavBar2 } from "../Components/NavBar2";
 
 export const Hodnotenie = () => {
     return (
-    <div>
+        <div>
         <NavBar1 />
-        <h1>Hodnotenie</h1>;
-    </div>)
+        <NavBar2 />
+
+        <div className="divPodListami">
+            <h4> Toto je Hodnotenie </h4>
+        </div>
+        
+    </div>
+    )
 };
 
-/* export function Hodnotenie() {
-    return <h1>
-    Hodnotenie
-    </h1>
-} */
 

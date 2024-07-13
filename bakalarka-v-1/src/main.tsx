@@ -6,6 +6,10 @@ import './index.css'
 
 import { RouterProvider } from "react-router-dom";
 
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <RouterProvider router={router} />
+)
+
 /* 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./ErrorPage.tsx";
@@ -33,7 +37,3 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 ); */
 
 
-
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <RouterProvider router={router} />
-)

@@ -7,13 +7,13 @@ import { NavBar2 } from "../Components/NavBar2";
 //interface Props {}
 // const HomePage = (props: Props) => {
 
-export const HomePage = () => {
+export const TerminyRozvrh = () => {
     return (
     <div>
         <NavBar1 />
         <NavBar2 />
 
-        <div className="divPodListami"> <h4> Toto je Homepage </h4> </div>
+        <div className="divPodListami"> <h4> Toto su terminy a rozvrh </h4> </div>
     </div>
     )
 };
