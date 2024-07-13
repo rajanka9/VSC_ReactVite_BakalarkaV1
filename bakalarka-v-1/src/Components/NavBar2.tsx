@@ -5,26 +5,26 @@ import "./NavBar2.css"
 //interface Props{}
 //const NavBar1 = (props: Props) => {
 
+//  <h2> 🏠 Jana Rádiková 5ZYR31 </h2> 
+//  <h2> 🏠︎ Jana Rádiková 5ZYR31 </h2> 
+
+
 export const NavBar2 = () => {
     return (
       <div className='pozadieHL2'>
           
           <div className='frame1'>
-            
           <NavLink to="/home">
             <div className='divProfile'>
               <h2> 
-                ...
-              </h2>
-              <h2> 
-                Jana Radikova 5ZYR31
-              </h2>
+              👤 Jana Rádiková 5ZYR31 
+              </h2> 
             </div>
             </NavLink> 
 
             <NavLink to="/terminyRozvrh">
               <h2> 
-                Terminy/Rozvrh
+                Termíny/Rozvrh
               </h2>
             </NavLink> 
               
@@ -37,7 +37,7 @@ export const NavBar2 = () => {
               
             <NavLink to="/materialy">
                 <h2> 
-                  Materialy
+                  Materiály
                 </h2>
             </NavLink> 
               
@@ -55,7 +55,7 @@ export const NavBar2 = () => {
             <h2> 
               SK
             </h2>
-            <h2> 
+            <h2 className="bezHover"> 
               /
             </h2>
             <h2> 
@@ -64,7 +64,7 @@ export const NavBar2 = () => {
             </div>
   
             <h2> 
-            Odhlasenie
+            ꗃ Odhlasenie
             </h2>
           </div>
 

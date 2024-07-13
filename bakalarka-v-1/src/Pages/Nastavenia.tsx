@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./Centrovanie.css"
+import "./Style_Nastavenia.css"
 import { NavBar1 } from '../Components/NavBar1';
 import { NavBar2 } from "../Components/NavBar2";
 
@@ -17,3 +18,4 @@ export const Nastavenia = () => {
     </div>
     )
 };
+

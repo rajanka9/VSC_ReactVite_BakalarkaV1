@@ -84,6 +84,9 @@ function App() {
 
 export default App;
 
+// Links 24.2.2024 ----------------------------------------
+// TypeScript in React - COMPLETE Tutorial (Crash Course)
+  // https://www.youtube.com/watch?v=TPACABQTHvM 
 
 
 // Passing Data via Links in React: A Guide to Effective Data Transfer

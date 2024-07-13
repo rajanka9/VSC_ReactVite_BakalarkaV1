@@ -5,13 +5,13 @@ div {
   .pozadieHL1 {
     background-color: #223673;
     top: 0;
-    position: absolute;
+    position: fixed;
   
     display: flex;
     justify-content: space-between;
   
     width: 100%;
-    height: 85px;
+    height: 65px;
     flex-shrink: 0;
 
   }
@@ -21,7 +21,7 @@ div {
     color: #FFF;
     text-align: center;
     font-family: Open Sans;
-    font-size: 1.5rem; /*24px*/
+    font-size: 1.25rem; /*24px*/
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -33,7 +33,7 @@ div {
   .unizaLogo {
     margin-left: 20px;
   
-    height: 69px;
+    height: 54px;
   }
   
   /*random pridanie komentu*/

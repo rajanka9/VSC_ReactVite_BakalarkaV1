@@ -3,17 +3,18 @@
 
 }
 
-.podListami {
+/**.podListami {
   position: absolute;
   display: flex; 
-  justify-content: space-evenly; /* Center the flex items (centered-div) horizontally */
-  align-items: center; /* Center the flex items (centered-div) vertically */
-  width: 98vw;
+  justify-content: space-evenly;*/ /* Center the flex items (centered-div) horizontally */
+  /*align-items: center;*/ /* Center the flex items (centered-div) vertically */
+  /*width: 98vw;
   
   margin-inline-end: 3%;
   margin-inline-start: 3%;
   
-}
+}*/
+
 
 .h3 {
   color: #000000;

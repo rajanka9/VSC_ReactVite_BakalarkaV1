@@ -14,10 +14,12 @@ export const NavBar1 = () => {
 
         <NavLink to="/home">
           <h1 className='h1'>           
-            Principy operacnych systemov
+            Princípy operačných systémov
           </h1>
         </NavLink>
 
       </div>
     );
   };
+
+  //random koment

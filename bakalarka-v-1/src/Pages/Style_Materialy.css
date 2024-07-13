@@ -1,0 +1,140 @@
+.obrazokNadpisPodnadpis {
+    display: flex;
+    flex-direction: row;
+
+    gap: 0.875rem;
+    color: #000;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .imgStudijneMaterialy {
+    object-fit: auto;
+    object-position: center;
+    width: 7rem;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+    padding: 0 1.25rem;
+    display: flex;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+
+
+  .nadpis {
+    text-align: center;
+    font: 700 1.875rem Open Sans, sans-serif;
+    max-width: 100%;
+  }
+
+  .podnadpis {
+    margin-top: 10px;
+    font: 400 1.25rem Open Sans, sans-serif;
+    max-width: 1045px;
+}
+
+
+/*tabulka*/
+
+.tabulkaDosuhnuteBody {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .oranzovyRiadok {
+    justify-content: space-between;
+    background-color: rgba(254, 184, 28, 0.22);
+    display: flex;
+
+    width: 100%;
+    gap: 20px;
+    padding: 10px 80px;
+    max-width: 100%;
+    flex-wrap: wrap;
+    white-space: initial;
+
+  }
+
+  .textOranzovyZaciatok {
+    font-family: Open Sans, sans-serif;
+    font-size: 1.125rem; /*18px*/
+    color: #000;
+    font-weight: 700;
+    width: 212px;
+    text-align: start;
+  }
+
+  .textOranzovy {
+    font-family: Open Sans, sans-serif;
+    font-size: 1.125rem; /*18px*/
+    color: #000;
+    font-weight: 700;
+    width: 212px;
+    text-align: center;
+  }
+  
+  .riadokTabulka {
+    justify-content: space-between;
+    display: flex;
+    margin-top: 25px;
+    width: 100%;
+    gap: 20px;
+    white-space: nowrap;
+    padding: 0 80px;
+  }
+  @media (max-width: 991px) {
+    .riadokTabulka {
+      max-width: 100%;
+      flex-wrap: wrap;
+      white-space: initial;
+      padding: 0 20px;
+    }
+  }
+
+  .textRiadokZaciatok{
+    font-family: Open Sans, sans-serif;
+    font-size: 1.125rem; /*18px*/
+    
+    width: 212px;
+    text-align: start;
+  }
+
+  .textRiadok{
+    font-family: Open Sans, sans-serif;
+    font-size: 1.125rem; /*18px*/
+
+    width: 212px;
+    text-align: center;
+  }
+
+  .textRiadok:hover{
+    font-family: Open Sans, sans-serif;
+    font-size: 1.125rem; /*18px*/
+    font-weight: 700;
+    
+
+    width: 212px;
+    text-align: center;
+
+    color: #223673;
+    text-decoration: underline;
+
+  }
+  
+  .linkFarba {
+    font-family: Open Sans, sans-serif;
+    font-size: 1.125rem; /*18px*/
+    /*color: #000000;*/
+    font-weight: 600;
+
+    width: 212px;
+    text-align: center;
+  }
+
+
+
+    
