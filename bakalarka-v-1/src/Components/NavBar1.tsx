@@ -22,4 +22,3 @@ export const NavBar1 = () => {
     );
   };
 
-  //random koment

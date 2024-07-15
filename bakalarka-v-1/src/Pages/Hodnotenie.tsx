@@ -1,4 +1,4 @@
-import React from "react";
+//import React from "react";
 
 import "./Centrovanie.css"
 import "./Style_Hodnotenie.css"
@@ -6,8 +6,6 @@ import { NavBar1 } from '../Components/NavBar1';
 import { NavBar2 } from "../Components/NavBar2";
 
 import imgDosiahnuteVysledky from "../assets/img_dosiahnuteVysledky.png"
-
-
 
 export const Hodnotenie = () => {
     return (
