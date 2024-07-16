@@ -1,6 +1,15 @@
-.obrazokNadpisPodnadpis {
-    display: flex;
+.boxDosiahnuteVysledkyColumn {
+  display: flex; 
     flex-direction: column;
+    justify-content: space-between; /* Center the flex items (centered-div) horizontally */
+    align-items: center;
+    
+    width: 100%;
+}
+
+.obrazokNadpisPodnadpisHodnotenie {
+    display: flex;
+    flex-direction: row;
     align-items: flex-start;
 
     gap: 0.875rem;
@@ -8,6 +17,8 @@
     justify-content: center;
 
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: -56px;
   }
 
   .imgHodnotenie {
@@ -25,7 +36,6 @@
     align-items: flex-start;
     max-width: 100%;
   }
-
 
   .nadpis {
     text-align: center;

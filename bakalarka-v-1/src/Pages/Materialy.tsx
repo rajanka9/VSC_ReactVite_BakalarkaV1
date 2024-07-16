@@ -17,13 +17,9 @@ export const Materialy = () => {
         <NavBar1 />
         <NavBar2 />
 
-        <div className="centrovanie">
-        
-            <div className="divPodListami">
+        <div className="divPodListami">
             <ObrazokNadpisPodnadpis />
             <TabulkaDosiahnuteBodyStudenta />
-            </div>
-
         </div>
 
     </div>
@@ -33,7 +29,7 @@ export const Materialy = () => {
 function ObrazokNadpisPodnadpis() {
     return (
       <>
-        <div className='obrazokNadpisPodnadpis'>
+        <div className='obrazokNadpisPodnadpisMaterialy'>
           <img className="imgStudijneMaterialy"
             loading='lazy'
             src={imgMaterialy}

@@ -18,17 +18,23 @@ export const HomePage = () => {
     <div>
         <NavBar1 />
         <NavBar2 />
+
         <div className="divPodListami"> 
 
-        <div className="zarovanieVelkyObrazok"> 
-        <BoxProfilVybrateCvZmenyNastavenia />
-        <img
-          className="velkyObrazok"
-          loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/6ee9a319af464f2ec025ba5f0b624c65d11b651e788f845d2cbebf4f6fd7acd9?"
-        />
-        </div>
+        <div className="zarovanieSBoxomOznamov"> 
+            <div className="zarovanieVelkyObrazok"> 
+            <BoxProfilVybrateCvZmenyNastavenia />
+            <img
+            className="velkyObrazok"
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/6ee9a319af464f2ec025ba5f0b624c65d11b651e788f845d2cbebf4f6fd7acd9?"
+            />
+            </div>
 
+            <BoxOznamy />
+            
+        </div>
+        
         </div>
         
     </div>
@@ -52,7 +58,7 @@ function BoxProfilVybrateCvZmenyNastavenia() {
                     />
 
                     <NavLink className="zmenyNastaveniaIkonkaLink" to="/nastavenia">
-                    <div className="zmenaPismo">Zmeniť heslo</div>
+                    <div className="zmenaPismoAndLink">Zmeniť heslo</div>
                     </NavLink> 
                 </div>
 
@@ -66,7 +72,7 @@ function BoxProfilVybrateCvZmenyNastavenia() {
                     />
 
                     <NavLink className="zmenyNastaveniaIkonkaLink" to="/nastavenia">
-                    <div className="zmenaPismo">Zmeniť predmet</div>
+                    <div className="zmenaPismoAndLink">Zmeniť predmet</div>
                     </NavLink> 
 
                 </div>
@@ -94,16 +100,30 @@ function BoxOznamy() {
     return (
     <>
 
-    <div className="boxOznamyCentrovanie">
+    <div className="boxOznamyCentrovanieSTextom">
         <div className="textNadpisOznam">
         Oznamy
         </div>
+
+        <div className="boxOznamyScroll">
+        <BoxOznam
+        teachersNameOznam= "P. Sedlacek"
+        dateOznam= "29.9.2024 9:29"
+        noteOznam= "Oznam Test - Sed non nibh quis nibh tempor vestibulum. Sed mattis vulputate risus nec suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        />
 
         <BoxOznam
         teachersNameOznam= "P. Sedlacek"
         dateOznam= "29.9.2024 9:29"
         noteOznam= "Oznam Test - Sed non nibh quis nibh tempor vestibulum. Sed mattis vulputate risus nec suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         />
+
+        <BoxOznam
+        teachersNameOznam= "P. Sedlacek"
+        dateOznam= "29.9.2024 9:29"
+        noteOznam= "Oznam Test - Sed non nibh quis nibh tempor vestibulum. Sed mattis vulputate risus nec suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        />
+        </div>
     </div>
 
     </>

@@ -73,9 +73,9 @@ function App() {
     <div className="App"> 
       <NavBar1 />
       <NavBar2 />
-
+      
       <div className='podListami'>
-        <h4> Welcome </h4>
+        <HomePage />
       </div>
     
     </div>

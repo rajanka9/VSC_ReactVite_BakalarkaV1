@@ -12,16 +12,13 @@ export const Hodnotenie = () => {
     <div>
         <NavBar1 />
         <NavBar2 />
-
-        <div className="centrovanie">
         
-            <div className="divPodListami">
-            <ObrazokNadpisPodnadpis />
-            <TabulkaDosiahnuteBodyStudenta />
-            </div>
+        <div className="divPodListami">
+        <ObrazokNadpisPodnadpis />
+        <TabulkaDosiahnuteBodyStudenta />
+
 
         </div>
-        
         
     </div>
     )
@@ -30,7 +27,7 @@ export const Hodnotenie = () => {
 function ObrazokNadpisPodnadpis() {
     return (
       <>
-        <div className='obrazokNadpisPodnadpis'>
+        <div className='obrazokNadpisPodnadpisHodnotenie'>
           <img className="imgHodnotenie"
             loading='lazy'
             src={imgDosiahnuteVysledky}

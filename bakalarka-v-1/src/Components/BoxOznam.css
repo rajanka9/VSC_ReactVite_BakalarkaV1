@@ -8,7 +8,6 @@
     
   }
 
-  
   .imgOznam {
     object-fit: auto;
     object-position: center;
@@ -16,7 +15,6 @@
     align-self: start;
 
   }
-
 
   /*
   https://www.w3schools.com/css/css_padding.asp 
@@ -28,7 +26,7 @@
   */
 
   .textOznamZarovnanie {
-    border-radius: 0px 10px 10px 10px;
+    border-radius: 0px 5px 5px 5px;
     background-color: #ffffff;
     display: flex;
     justify-content: start;
