@@ -95,7 +95,7 @@ function BoxProfilVybrateCvZmenyNastavenia() {
   );
 }
 
-// este nedorobene
+// pridat skrolovanie medzi oznamami !!!
 function BoxOznamy() {
     return (
     <>
