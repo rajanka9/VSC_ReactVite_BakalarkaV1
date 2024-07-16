@@ -130,3 +130,14 @@ function BoxOznamy() {
   );
 }
 
+// https://www.builder.io/m/react 
+// https://nekocalc.com/px-to-rem-converter 
+// https://react.dev/learn
+// https://www.typescriptlang.org/cheatsheets/ or https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/basic_type_example/ 
+
+// Reusable inputField - https://stackoverflow.com/questions/65409862/how-to-create-a-reusable-input-field-using-react 
+
+// https://dev.to/elhamnajeebullah/react-typescript-what-is-reactfc-and-why-should-i-use-it-4029 
+
+// https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Aligning_items_in_a_flex_container 
+// https://www.google.com/search?client=firefox-b-d&q=difference+between+margin+and+padding+css 
