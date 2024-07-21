@@ -14,17 +14,15 @@ export const Hodnotenie = () => {
         <NavBar2 />
         
         <div className="divPodListami">
-        <ObrazokNadpisPodnadpis />
-        <TabulkaDosiahnuteBodyStudenta />
-
-
+          <ObrazokNadpisPodnadpisHodnotenie />
+          <TabulkaDosiahnuteBodyStudenta />
         </div>
         
     </div>
     )
 };
 
-function ObrazokNadpisPodnadpis() {
+function ObrazokNadpisPodnadpisHodnotenie() {
     return (
       <>
         <div className='obrazokNadpisPodnadpisHodnotenie'>
@@ -33,9 +31,9 @@ function ObrazokNadpisPodnadpis() {
             src={imgDosiahnuteVysledky}
             alt="Ikonka pocitaca a hodnotenia"
           />
-          <div className='text'>
-            <div className='nadpis'>Dosiahnuté výsledky</div>
-            <div className='podnadpis'>
+          <div className='hodnotenieTextDokopy'>
+            <div className='hodnotenieNadpis'>Dosiahnuté výsledky</div>
+            <div className='hodnoteniePodnadpis'>
               V prípade nezrovnalostí ohľadom bodového hodnotenia, neváhajte
               kontaktovať vášho vyučujúceho.
             </div>
@@ -50,36 +48,37 @@ function ObrazokNadpisPodnadpis() {
     return (
       <>
         <div className='tabulkaDosuhnuteBody'>
-          <div className='oranzovyRiadok'>
-            <div className='textOranzovyZaciatok'>Zápočet</div>
-            <div className='textOranzovy'>Minimum</div>
-            <div className='textOranzovy'>Maximum</div>
-            <div className='textOranzovy'>Dosiahnuté body</div>
+          <div className='hodnotenieOranzovyRiadok'>
+            <div className='hodnotenieTextOranzovyZaciatok'>Zápočet</div>
+            <div className='hodnotenieTextOranzovy'>Minimum</div>
+            <div className='hodnotenieTextOranzovy'>Maximum</div>
+            <div className='hodnotenieTextOranzovy'>Dosiahnuté body</div>
           </div>
 
-          <div className="riadokTabulka">
+          <div className="hodnotenieRiadokTabulka">
             <div className='textRiadokZaciatokHodnotenie'>Bash</div>
             <div className='textRiadokHodnotenie'>2</div>
             <div className='textRiadokHodnotenie'>10</div>
             <div className='textRiadokHodnotenie'>3</div>
           </div>
-          <div className="riadokTabulka">
+          <div className="hodnotenieRiadokTabulka">
             <div className='textRiadokZaciatokHodnotenie'>Vlákna</div>
             <div className='textRiadokHodnotenie'>18</div>
             <div className='textRiadokHodnotenie'>30</div>
             <div className='textRiadokHodnotenie'>20</div>
           </div>
-          <div className="riadokTabulka">
+          <div className="hodnotenieRiadokTabulka">
             <div className='textRiadokZaciatokHodnotenie'>Body zo semestra</div>
             <div className='textRiadokHodnotenie'>0</div>
             <div className='textRiadokHodnotenie'>10</div>
             <div className='textRiadokHodnotenie'>2</div>
           </div>
-          <div className="zelenyRiadok">
-            <div className='textZelenyZaciatok'>Spolu</div>
-            <div className='textZeleny'>20</div>
-            <div className='textZeleny'>50</div>
-            <div className='textZeleny'>25 ✅</div>
+
+          <div className="hodnotenieZelenyRiadok">
+            <div className='hodnotenieTextZelenyZaciatok'>Spolu</div>
+            <div className='hodnotenieTextZeleny'>20</div>
+            <div className='hodnotenieTextZeleny'>50</div>
+            <div className='hodnotenieTextZeleny'>25 ✅</div>
           </div>
         </div>
       </>

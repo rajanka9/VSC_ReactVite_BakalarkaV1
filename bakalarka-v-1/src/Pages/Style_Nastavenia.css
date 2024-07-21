@@ -1,1 +1,283 @@
+divNastaveniaRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-self: stretch;
+  width: 100%;
+  padding-top: 145px;
+  padding-bottom: 5%;
+}
+
+/*.divNastaveniaColumn {
+      padding-top: 145px;
+      display: flex;
+      flex-direction: column;
+      /*align-items: center;*/
+      /*justify-content: flex-start;*/
+      /*padding-bottom: 20px;
+}*/
+
+/*obrazok a nadpis+podnadpis */
+.nastaveniaObrazokNadpisPodnadpis {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      color: #000;
+      align-items: center;
+      width: 100%;
+      /*margin-top: 25px;*/
+    }
+    @media (max-width: 991px) {
+      .obrazokNadpisPodnadpisMaterialy {
+        flex-wrap: wrap;
+      }
+    }
+    @media (max-width: 640px) {
+    .obrazokNadpisPodnadpisMaterialy {
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      }
+    }
+
+    .imgNastavenia {
+      aspect-ratio: 1;
+      object-fit: auto;
+      object-position: center;
+      width: 7rem;
+      max-width: 100%;
+    }
+
+    .nastaveniaNadpisPodnadpis {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      /*margin: auto auto auto 0;*/
+      padding: 0 20px;
+    }
+    @media (max-width: 991px) {
+      .nastaveniaNadpisPodnadpis {
+        max-width: 100%;
+      }
+    }
     
+    .nadpisNastavenia {
+      text-align: center;
+      /*margin-right: auto;*/
+      font: 700 1.875rem Open Sans, sans-serif; /*30*/
+    }
+    @media (max-width: 991px) {
+      .nadpisNastavenia {
+        max-width: 100%;
+      }
+    }
+    .podnadpisNastavenia {
+      margin-top: 10px;
+      font: 400 1.25rem Open Sans, sans-serif; /*20*/
+    }
+    
+    @media (max-width: 991px) {
+      .podnadpisNastavenia {
+        max-width: 100%;
+      }
+    }
+
+    /*sekcia buttons ----------------------------------------------------------------*/
+    .sekciaButtonsNastavenia {
+      align-self: start;
+      display: flex;
+      gap: 20px;
+      font-size: 1rem;
+      font-weight: 700;
+      text-align: center;
+      justify-content: start;
+      width: 100%;
+
+    }
+    @media (max-width: 991px) {
+      .sekciaButtonsNastavenia {
+        flex-wrap: wrap;
+      }
+    }
+
+    .buttonSvetlyNastavenia {
+      font-family: Open Sans, sans-serif;
+      justify-content: center;
+      border-radius: 10px;
+      background-color: #223673;
+      color: #fff;
+      padding: 14px 20px;
+    }
+
+    .buttonTmavyNastavenia {
+      font-family: Open Sans, sans-serif;
+      justify-content: center;
+      border-radius: 10px;
+      border-color: rgba(34, 54, 115, 1);
+      border-style: solid;
+      border-width: 3px;
+      background-color: #fff;
+      color: rgba(34, 54, 115, 1);
+      padding: 14px 20px;
+    }
+
+    .buttonTmavyNastavenia:hover {
+      font-family: Open Sans, sans-serif;
+      justify-content: center;
+      border-radius: 10px;
+      border-color: rgba(254, 184, 28, 1);
+      border-style: solid;
+      border-width: 3px;
+      background-color: #fff;
+      padding: 14px 20px;
+
+      color: rgb(0, 0, 0);
+    }
+
+    /*sekcia komponenty na zmenu XY -------------------------------------------------------------*/
+    .komponentZmenaHesla {
+      border-radius: 10px;
+      background-color: rgba(41, 41, 41, 0.03);
+      display: flex;
+
+      width: 100%;
+      flex-direction: column;
+      color: #000;
+      font-weight: 400;
+      padding: 1% 1.5%;
+      gap: 5px;
+
+    }
+    @media (max-width: 991px) {
+      .komponentZmenaHesla {
+        max-width: 100%;
+        padding: 0 16px;
+      }
+    }
+    .komponentHlavnyNadpis {
+          text-align: left;
+          margin-right: auto;
+          width: 100%;
+          font: 700 20px Open Sans, sans-serif;
+          margin-bottom: 10px;
+    }
+    @media (max-width: 991px) {
+      .komponentHlavnyNadpis {
+        max-width: 100%;
+      }
+    }
+
+    .komponentZmenaHeslaRiadok {
+      display: flex;
+      gap: 16px;
+      justify-content: space-between;
+      width: 100%;
+    }
+    @media (max-width: 991px) {
+      .komponentZmenaHeslaRiadok {
+        max-width: 100%;
+        flex-wrap: wrap;
+      }
+    }
+    .textPredTextovymPolom {
+      width: 27%;
+      text-align: left;
+      flex-grow: 0;
+      max-width: 100%;
+      margin: auto 0;
+      font: 16px Open Sans, sans-serif;
+    }
+
+    .textovePoleZlte {
+      align-items: start;
+          border-radius: 10px;
+          border-color: rgba(254, 184, 28, 1);
+          border-style: solid;
+          border-width: 2px;
+          background-color: #fff;
+          white-space: nowrap;
+          justify-content: center;
+          width: 100%;
+          padding: 10px 16px;
+          font: 16px Open Sans, sans-serif;
+    }
+    @media (max-width: 991px) {
+      .textovePoleZlte {
+        max-width: 100%;
+        padding-right: 20px;
+        white-space: initial;
+      }
+    }
+    
+    .textovePoleSede {
+      align-items: start;
+      border-radius: 10px;
+      border-color: rgba(0, 0, 0, 0.5);
+      border-style: solid;
+      border-width: 2px;
+      background-color: #fff;
+      white-space: nowrap;
+      justify-content: center;
+      width: 100%;
+      padding: 10px 16px;
+      font: 16px Open Sans, sans-serif;
+      margin-top: 8px;
+    }
+    @media (max-width: 991px) {
+      .textovePoleSede {
+        max-width: 100%;
+        padding-right: 20px;
+        white-space: initial;
+      }
+    }
+    
+    .komponentButtonZlty {
+      justify-content: center;
+      border-radius: 10px;
+      background-color: #feb81c;
+      align-self: end;
+      margin-top: 10px;
+      white-space: nowrap;
+      text-align: center;
+      padding: 14px 20px;
+      font: 700 1rem Open Sans, sans-serif;
+    }
+    @media (max-width: 991px) {
+      .komponentButtonZlty {
+        white-space: initial;
+      }
+    }
+
+    .komponentButtonZlty:hover {
+      justify-content: center;
+      border-radius: 10px;
+      background-color: #feb81c;
+      align-self: end;
+      margin-top: 10px;
+      white-space: nowrap;
+      text-align: center;
+      padding: 14px 20px;
+      font: 700 1rem Open Sans, sans-serif;
+      color: #ffffff;
+    }
+
+    /*
+    https://chatgpt.com/c/8ebfb9b1-2675-4aff-b4bf-49abd720707b
+    Parent Container (.parent):
+        display: flex; sets the container to use flexbox layout.
+        flex-direction: row; ensures the flex items (children) are placed in a row.
+        justify-content: center; centers the flex items horizontally.
+        flex-wrap: wrap; allows the items to wrap if necessary.
+        width: 100%; makes the parent container take up the full width of its parent.
+
+    Child Container (.child):
+        width: 50%; ensures the child is not 100% wide, allowing it to be centered.
+        background-color is added for visibility to see the centering effect.
+
+    By adjusting the width of the child element and ensuring no conflicting styles are applied, the div should center horizontally as expected 
+    */
+  

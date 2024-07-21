@@ -1,13 +1,20 @@
 .obrazokNadpisPodnadpisMaterialy {
     display: flex;
     flex-direction: row;
-
-    gap: 0.875rem;
+    gap: 10px;
     color: #000;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-
-    margin-top: -116px;
+    align-items: center;
+    width: 95%;
+}
+@media (max-width: 991px) {
+  .obrazokNadpisPodnadpisMaterialy {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    }
   }
 
   .imgStudijneMaterialy {
@@ -15,8 +22,15 @@
     object-position: center;
     width: 7rem;
   }
+  @media (max-width: 991px) {
+    .imgStudijneMaterialy {
+      object-fit: auto;
+      object-position: center;
+      width: 6rem;
+      }
+    }
 
-  .text {
+  .textDokopyMaterialy {
     display: flex;
     flex-direction: column;
     margin: auto 0;
@@ -26,28 +40,26 @@
     max-width: 100%;
   }
 
-
-  .nadpis {
+  .nadpisMaterialy {
     text-align: center;
     font: 700 1.875rem Open Sans, sans-serif;
     max-width: 100%;
   }
 
-  .podnadpis {
+  .podnadpisMaterialy {
     margin-top: 10px;
     font: 400 1.25rem Open Sans, sans-serif;
     max-width: 1045px;
 }
 
 
-/*tabulka*/
-
-.tabulkaDosuhnuteBody {
+/*tabulka --------------------------------------------------------------------*/ 
+.tabulkaSLinkami {
     display: flex;
     flex-direction: column;
     
   }
-  .oranzovyRiadok {
+  .oranzovyRiadokMaterialy {
     justify-content: space-between;
     background-color: rgba(254, 184, 28, 0.22);
     display: flex;
@@ -58,7 +70,6 @@
     max-width: 100%;
     flex-wrap: wrap;
     white-space: initial;
-
   }
 
   .textOranzovyZaciatok {
@@ -79,7 +90,7 @@
     text-align: center;
   }
   
-  .riadokTabulka {
+  .riadokTabulkaMaterialy {
     justify-content: space-between;
     display: flex;
     margin-top: 25px;
@@ -89,7 +100,7 @@
     padding: 0 80px;
   }
   @media (max-width: 991px) {
-    .riadokTabulka {
+    .riadokTabulkaMaterialy {
       max-width: 100%;
       flex-wrap: wrap;
       white-space: initial;
@@ -111,6 +122,8 @@
 
     width: 212px;
     text-align: center;
+    text-decoration: underline;
+
   }
 
   .textRiadok:hover{
@@ -136,7 +149,3 @@
     width: 212px;
     text-align: center;
   }
-
-
-
-    

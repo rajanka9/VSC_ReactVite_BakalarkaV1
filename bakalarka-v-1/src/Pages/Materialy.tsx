@@ -18,15 +18,15 @@ export const Materialy = () => {
         <NavBar2 />
 
         <div className="divPodListami">
-            <ObrazokNadpisPodnadpis />
-            <TabulkaDosiahnuteBodyStudenta />
+            <ObrazokNadpisPodnadpisMaterialy />
+            <TabulkaSLInkami />
         </div>
 
     </div>
 )
 };
 
-function ObrazokNadpisPodnadpis() {
+function ObrazokNadpisPodnadpisMaterialy() {
     return (
       <>
         <div className='obrazokNadpisPodnadpisMaterialy'>
@@ -34,9 +34,9 @@ function ObrazokNadpisPodnadpis() {
             loading='lazy'
             src={imgMaterialy}
           />
-          <div className='text'>
-            <div className='nadpis'>Študijné materiály</div>
-            <div className='podnadpis'>
+          <div className='textDokopyMaterialy'>
+            <div className='nadpisMaterialy'>Študijné materiály</div>
+            <div className='podnadpisMaterialy'>
             V tejto sekcií nájdete všetky materiály k predmetu Princípy operačných systémov (POS). Samozrejme odporúčame čerpať aj z iných (dôveryhodných) zdrojov. :)
             </div>
           </div>
@@ -46,18 +46,18 @@ function ObrazokNadpisPodnadpis() {
     );
   }
 
-  function TabulkaDosiahnuteBodyStudenta() {
+  function TabulkaSLInkami() {
     return (
       <>
-        <div className='tabulkaDosuhnuteBody'>
-          <div className='oranzovyRiadok'>
+        <div className='tabulkaSLinkami'>
+          <div className='oranzovyRiadokMaterialy'>
             <div className='textOranzovyZaciatok'>Názov</div>
             <div className='textOranzovyZaciatok'>Popis</div>
             <div className='textOranzovy'>Spustiť</div>
             <div className='textOranzovy'>Stiahnuť</div>
           </div>
 
-          <div className="riadokTabulka">
+          <div className="riadokTabulkaMaterialy">
             <div className='textRiadokZaciatok'>Online materiály pre cvičenie</div>
             <div className='textRiadokZaciatok'>Podklady pre cvičenie z predmetu</div>
             <a className='linkFarba' href="https://frios2.fri.uniza.sk/~chochlik/frios/frios/sk.html">
@@ -66,7 +66,7 @@ function ObrazokNadpisPodnadpis() {
             <div className='textRiadok'> </div>
           </div>
 
-          <div className="riadokTabulka">
+          <div className="riadokTabulkaMaterialy">
             <div className='textRiadokZaciatok'>Vlákna</div>
             <div className='textRiadokZaciatok'>Pomoc pri Makefile</div>
             <a className='linkFarba' href="https://makefiletutorial.com/">
@@ -75,7 +75,7 @@ function ObrazokNadpisPodnadpis() {
             <div className='textRiadok'> </div>
           </div>
 
-          <div className="riadokTabulka">
+          <div className="riadokTabulkaMaterialy">
             <div className='textRiadokZaciatok'>Bash - cheat sheet</div>
             <div className='textRiadokZaciatok'> </div>
             <a className='linkFarba' href="https://devhints.io/bash">

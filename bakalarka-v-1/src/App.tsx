@@ -120,3 +120,6 @@ export default App;
 // https://medium.com/@hammadrao891/passing-data-via-links-in-react-a-guide-to-effective-data-transfer-1e0b030e2a12
 
 // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options?utm_source=mozilla&utm_medium=firefox-console-errors&utm_campaign=default 
+
+//  How To Find And Fix Accessibility Issues In React | ReactJS Tutorials | RethinkingUI 
+// https://www.youtube.com/watch?v=hsngjoFrntI&pp=ygUib24gY2xpY2sgY2hhbmdpbmcgY29tcG9uZW50cyByZWFjdA%3D%3D 

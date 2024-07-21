@@ -21,19 +21,16 @@ export const HomePage = () => {
 
         <div className="divPodListami"> 
 
-        <div className="zarovanieSBoxomOznamov"> 
             <div className="zarovanieVelkyObrazok"> 
-            <BoxProfilVybrateCvZmenyNastavenia />
-            <img
-            className="velkyObrazok"
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/6ee9a319af464f2ec025ba5f0b624c65d11b651e788f845d2cbebf4f6fd7acd9?"
+                <BoxProfilVybrateCvZmenyNastavenia />
+                <img
+                className="velkyObrazok"
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/6ee9a319af464f2ec025ba5f0b624c65d11b651e788f845d2cbebf4f6fd7acd9?"
             />
             </div>
 
             <BoxOznamy />
-            
-        </div>
         
         </div>
         
@@ -141,3 +138,5 @@ function BoxOznamy() {
 
 // https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Aligning_items_in_a_flex_container 
 // https://www.google.com/search?client=firefox-b-d&q=difference+between+margin+and+padding+css 
+
+//@media tags na mobil - 

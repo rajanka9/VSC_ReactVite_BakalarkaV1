@@ -1,51 +1,52 @@
 .divPodListami { 
   display: flex; 
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center; /* Center the flex items (centered-div) horizontally */
-  align-items: start;
   
-  width: 100%;
-  margin-top: 70px;
+  justify-content: center; /* Center the flex items (centered-div) horizontally */
+  align-items: flex-start; /*Ylonova os*/
+  padding-top: 2%;
+  
+  /*margin-top: 70px;*/
   gap: 20px;
+  border: #ff0000 5px dotted;
+  /*margin-top: 125px;*/
+
+  margin-left: 8%;
+  margin-right: 8%;
+
+  width: 84vw;
+
+  flex-wrap: wrap;
+  
+  position: fixed;
+  top: 125px;
+  translate: auto -125px;
+
+  /*padding-left: 1%;
+  padding-right: 1%;*/
   }
 
-  /*.divPodListamiHodnotenie {
-    display: flex; 
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center; 
+  @media (max-width: 700px) {
+    .divPodListami {
+      display: flex; 
+      flex-direction: row;
+      
+      justify-content: center; /* Center the flex items (centered-div) horizontally */
+      align-items: flex-start; /*Ylonova os*/
+      padding-top: 2%;
+      
+      /*margin-top: 70px;*/
+      gap: 20px;
+      border: #ff0000 5px dotted;
+      /*margin-top: 125px;*/
     
-    width: 100%;
-    margin-top: 85px;
-    gap: 0px;
-  }*/
+      margin-left: 5%;
+      margin-right: 6%;
+    
+      width: 88vw;
+      height: 84vh;
+      overflow-y:scroll;
 
-
-  .divFrameText {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-  }
-
-  h4 {
-    color: #000;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 2rem; /*32px*/
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-  }
-
-  p {
-    color: #000;
-    text-align: start;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.1rem; /*18px*/
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    }
   }
 
