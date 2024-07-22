@@ -25,6 +25,7 @@
       justify-content: flex-start;
       gap: 8px;
 
+      width: 100%;
       }
     }
 
@@ -34,7 +35,7 @@
     width: 7.5rem;
   }
 
-  @media (max-width: 1100px) {
+  @media (max-width: 1111px) {
     .imgHodnotenie {
       object-fit: auto;
       object-position: center;
@@ -46,7 +47,7 @@
     display: flex;
     flex-direction: column;
     margin: auto 0;
-    padding: 0 1.25rem;
+    padding: 0 1rem;
     display: flex;
     align-items: flex-start;
     max-width: 100%;
@@ -56,9 +57,10 @@
       align-self: center;
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: flex-start;
       max-width: 100%;
+
+      /*align-items: center;*/
       }
     }
 
@@ -67,8 +69,7 @@
     font: 700 1.875rem Open Sans, sans-serif; /*30*/
     max-width: 100%;
   } 
-
-  @media (max-width: 1100px) {
+  @media (max-width: 1111px) {
     .hodnotenieNadpis {
     text-align: center;
     font: 700 1.625rem Open Sans, sans-serif; /*26*/
@@ -82,7 +83,7 @@
     max-width: 100%;
 
   }
-  @media (max-width: 1100px) {
+  @media (max-width: 1111px) {
     .hodnoteniePodnadpis {
      margin-top: 8px;
     font: 400 1rem Open Sans, sans-serif; /*16px*/
@@ -91,47 +92,91 @@
   }
 
 
+
+
 /*tabulka*/
 .tabulkaDosuhnuteBody {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
   } 
-  @media (max-width: 1150px) {
-    .tabulkaDosuhnuteBody {
-      display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
-    }
-  }
 
-  /*Oranzova cast --------------------------------------------------------*/
+  /*Farebna cast --------------------------------------------------------*/
+  /*Oranzovy riadok -----------------------------------------------------*/  
   .hodnotenieOranzovyRiadok {
     justify-content: space-evenly;
     background-color: rgba(254, 184, 28, 0.22);
     display: flex;
 
     gap: 20px;
-    padding: 10px 80px;
-    white-space: nowrap;
-
+    padding: 10px 3%;
+    white-space: initial;
     flex-wrap: wrap;
+
+    max-width: 100%;
+
   }
-  @media (max-width: 1100px) {
+  @media (max-width: 1111px) {
     .hodnotenieOranzovyRiadok {
       flex-wrap: wrap;
       white-space: initial;
-      padding: 9px 20px;
+      padding: 9px 3%;
       justify-content: center;
       gap: 16px;
+      max-width: 100%;
     }
   }
+  @media (max-width: 441px) {
+    .hodnotenieOranzovyRiadok {
+      flex-wrap: wrap;
+      white-space: initial;
+      padding: 9px 3%;
+      justify-content: center;
+      gap: 14px;
+      max-width: 100%;
+    }
+  }
+  /*Oranzovy riadok -----------------------------------------------------*/  
+  
+  /*Zeleny riadok ------------------------------------------------------*/  
+   .hodnotenieZelenyRiadok {
+    justify-content: space-evenly;
+    background-color: #c5ffdc;
+    display: flex;
 
-  .hodnotenieTextOranzovyZaciatok {
+    gap: 20px;
+    padding: 10px 3%;
+    white-space: initial;
+    flex-wrap: wrap;
+
+    max-width: 100%;
+
+  }
+  @media (max-width: 1111px) {
+    .hodnotenieZelenyRiadok {
+      flex-wrap: wrap;
+      white-space: initial;
+      padding: 9px 3%;
+      justify-content: center;
+      gap: 16px;
+      max-width: 100%;
+    }
+  }
+  @media (max-width: 441px) {
+    .hodnotenieZelenyRiadok {
+      flex-wrap: wrap;
+      white-space: initial;
+      padding: 9px 3%;
+      justify-content: center;
+      gap: 14px;
+      max-width: 100%;
+
+    }
+  }
+  /*Zeleny riadok ------------------------------------------------------*/  
+
+  /*Farebny riadok - Text ---------------------------------------------*/  
+  .hodnotenieTextZaciatokFarba {
     font-family: Open Sans, sans-serif;
     font-size: 1.125rem; /*18px*/
     color: #000;
@@ -140,29 +185,51 @@
     text-align: start;
   }
   @media (max-width: 1111px) {
-    .hodnotenieTextOranzovyZaciatok {
+    .hodnotenieTextZaciatokFarba {
     font-family: Open Sans, sans-serif;
     color: #000;
-    font-weight: 700;
-    width: 120px;
-
-    font-size: 1rem; /*16px*/
-    text-align: start;
-    }
-  }
-  @media (max-width: 752px) {
-    .hodnotenieTextOranzovyZaciatok {
-    font-family: Open Sans, sans-serif;
-    color: #000;
-    font-weight: 700;
-    width: 120px;
-    font-size: 1rem; /*16px*/
+    font-weight: 600;
     
+    width: 100px;
+    font-size: 1rem; /*16px*/
+    text-align: start;
+    }
+  }
+  @media (max-width: 750px) {
+    .hodnotenieTextZaciatokFarba {
+    font-family: Open Sans, sans-serif;
+    color: #000;
+    font-weight: 600;
+    
+    width: 77px;
+    font-size: 0.875rem; /*14px*/
+    text-align: start;
+    }
+  }
+  @media (max-width: 441px) {
+    .hodnotenieTextZaciatokFarba {
+    font-family: Open Sans, sans-serif;
+    color: #000;
+    font-weight: 600;
+    
+    width: 60px;
+    font-size: 0.75rem; /*12px*/
+    text-align: start;
+    }
+  }
+  @media (max-width: 341px) {
+    .hodnotenieTextZaciatokFarba {
+    font-family: Open Sans, sans-serif;
+    color: #000;
+    font-weight: 600;
+    
+    width: 60px;
+    font-size: 0.75rem; /*12px*/
     text-align: center;
     }
   }
 
-  .hodnotenieTextOranzovy {
+  .hodnotenieTextFarba {
     font-family: Open Sans, sans-serif;
     font-size: 1.125rem; /*18px*/
     color: #000;
@@ -171,69 +238,123 @@
     text-align: center;
   }
   @media (max-width: 1111px) {
-    .hodnotenieTextOranzovy {
+    .hodnotenieTextFarba {
     font-family: Open Sans, sans-serif;
-    font-size: 1rem; /*16px*/
     color: #000;
-    font-weight: 700;
-    width: 120px;
+    font-weight: 600;
+    
+    width: 100px;
+    font-size: 1rem; /*16px*/
     text-align: center;
     }
   }
-  /*Oranzova cast --------------------------------------------------------*/
+  @media (max-width: 750px) {
+    .hodnotenieTextFarba {
+    font-family: Open Sans, sans-serif;
+    color: #000;
+    font-weight: 600;
+    
+    width: 77px;
+    font-size: 0.875rem; /*14px*/
+    text-align: center;
+    }
+  }
+  @media (max-width: 441px) {
+    .hodnotenieTextFarba {
+    font-family: Open Sans, sans-serif;
+    color: #000;
+    font-weight: 600;
+    
+    width: 60px;
+    font-size: 0.75rem; /*12px*/
+    text-align: center;
+    }
+  }
+  /*Farebny riadok - Text ---------------------------------------------*/  
+  /*Farebna cast --------------------------------------------------------*/
 
   /*Biela cast --------------------------------------------------------*/  
-  .hodnotenieRiadokTabulka {
+    .hodnotenieRiadokTabulka {
     justify-content: space-evenly;
     display: flex;
 
-    margin-top: 20px;
     gap: 20px;
-    
-    padding: 0px 80px;
-  
-    white-space: nowrap;
+    padding: 10px 3%;
+    white-space: initial;
     flex-wrap: wrap;
+
+    max-width: 100%;
+
   }
-    @media (max-width: 1100px) {
+  @media (max-width: 1111px) {
     .hodnotenieRiadokTabulka {
       flex-wrap: wrap;
       white-space: initial;
-      padding: 0px 20px;
+      padding: 9px 3%;
       justify-content: center;
       gap: 16px;
+      max-width: 100%;
+    }
+  }
+  @media (max-width: 441px) {
+    .hodnotenieRiadokTabulka {
+      flex-wrap: wrap;
+      white-space: initial;
+      padding: 9px 3%;
+      justify-content: center;
+      gap: 14px;
+      max-width: 100%;
+
     }
   }
   
-  .textRiadokZaciatokHodnotenie{
+  .textRiadokZaciatokHodnotenie {
     font-family: Open Sans, sans-serif;
-    font-size: 1.125rem; /*18px*/
-    
-    text-align: start;
+    font-size: 1rem; /*16px*/
+    color: #000;
     width: 155px;
+    text-align: start;
   }
   @media (max-width: 1111px) {
     .textRiadokZaciatokHodnotenie {
     font-family: Open Sans, sans-serif;
     color: #000;
-
+    
+    width: 100px;
     font-size: 0.875rem; /*14px*/
     text-align: start;
-
-    width: 120px;
     }
   }
-  @media (max-width: 752px) {
+  @media (max-width: 750px) {
+    .textRiadokZaciatokHodnotenie {
+    font-family: Open Sans, sans-serif;
+    color: #000;
+    
+    width: 77px;
+    font-size: 0.75rem; /*12px*/
+    text-align: start;
+    }
+  }
+  @media (max-width: 441px) {
+    .textRiadokZaciatokHodnotenie {
+    font-family: Open Sans, sans-serif;
+    color: #000;
+    
+    width: 60px;
+    font-size: 0.688rem; /*11px*/
+    text-align: start;
+    }
+  }
+  @media (max-width: 341px) {
     .textRiadokZaciatokHodnotenie {
       font-family: Open Sans, sans-serif;
       color: #000;
-  
-      font-size: 0.875rem; /*14px*/
-      width: 120px;
+      width: 60px;
+      font-size: 0.688rem; /*11px*/
 
       text-align: center;
+      }
     }
-  }
 
   .textRiadokHodnotenie{
     font-family: Open Sans, sans-serif;
@@ -252,83 +373,46 @@
     text-align: center;
     }
   }
+
+  .textRiadokHodnotenie {
+    font-family: Open Sans, sans-serif;
+    font-size: 1rem; /*16px*/
+    color: #000;
+    width: 155px;
+    text-align: center;
+  }
+  @media (max-width: 1111px) {
+    .textRiadokHodnotenie {
+    font-family: Open Sans, sans-serif;
+    color: #000;
+    
+    width: 100px;
+    font-size: 0.875rem; /*14px*/
+    text-align: center;
+    }
+  }
+  @media (max-width: 750px) {
+    .textRiadokHodnotenie {
+    font-family: Open Sans, sans-serif;
+    color: #000;
+    
+    width: 77px;
+    font-size: 0.75rem; /*12px*/
+    text-align: center;
+    }
+  }
+  @media (max-width: 441px) {
+    .textRiadokHodnotenie {
+    font-family: Open Sans, sans-serif;
+    color: #000;
+    
+    width: 60px;
+    font-size: 0.688rem; /*11px*/
+    text-align: center;
+    }
+  }
   /*Biela cast --------------------------------------------------------*/  
 
-  /*Zelena cast --------------------------------------------------------*/  
-  .hodnotenieZelenyRiadok {
-    justify-content: space-evenly;
-    background-color: #c5ffdc;
-    display: flex;
-
-    margin-top: 20px;
-    gap: 16px;
-    font-weight: 700;
-    white-space: nowrap;
-    padding: 10px 80px;
-
-    flex-wrap: wrap;
-  }
-  @media (max-width: 1100px) {
-    .hodnotenieZelenyRiadok {
-      flex-wrap: wrap;
-      white-space: initial;
-      padding: 9px 20px;
-      max-width: 100%;
-      justify-content: center;
-    }
-  }
-
-  .hodnotenieTextZelenyZaciatok {
-    font-family: Open Sans, sans-serif;
-    font-size: 1.125rem; /*18px*/
-    color: #000;
-    font-weight: 700;
-    width: 155px;
-    text-align: start;
-  } 
-  @media (max-width: 1111px) {
-    .hodnotenieTextZelenyZaciatok {
-    font-family: Open Sans, sans-serif;
-    color: #000;
-    font-weight: 700;
-
-    font-size: 1rem; /*16px*/
-    text-align: start;
-    width: 120px;
-    }
-  }
-  @media (max-width: 752px) {
-    .hodnotenieTextZelenyZaciatok {
-    font-family: Open Sans, sans-serif;
-    color: #000;
-    font-weight: 700;
-    font-size: 1rem; /*16px*/
-    width: 120px;
-    
-    text-align: center;
-    }
-  }
-
-  .hodnotenieTextZeleny {
-    font-family: Open Sans, sans-serif;
-    font-size: 1.125rem; /*18px*/
-    color: #000;
-    font-weight: 700;
-    width: 155px;
-    text-align: center;
-  }
-  @media (max-width: 1111px) {
-    .hodnotenieTextZeleny {
-    font-family: Open Sans, sans-serif;
-    font-size: 1rem; /*16px*/
-    color: #000;
-    font-weight: 700;
-    width: 120px;
-    text-align: center;
-    }
-  }
-
-  /*Zelena cast --------------------------------------------------------*/  
 
 
 

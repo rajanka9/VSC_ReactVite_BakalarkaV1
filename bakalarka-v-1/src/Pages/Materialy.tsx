@@ -51,37 +51,37 @@ function ObrazokNadpisPodnadpisMaterialy() {
       <>
         <div className='tabulkaSLinkami'>
           <div className='oranzovyRiadokMaterialy'>
-            <div className='textOranzovyZaciatok'>Názov</div>
-            <div className='textOranzovyZaciatok'>Popis</div>
-            <div className='textOranzovy'>Spustiť</div>
-            <div className='textOranzovy'>Stiahnuť</div>
+            <div className='materialyTextOranzovyZaciatok'>Názov</div>
+            <div className='materialyTextOranzovyZaciatok'>Popis</div>
+            <div className='materialyTextOranzovy'>Spustiť</div>
+            <div className='materialyTextOranzovy'>Stiahnuť</div>
           </div>
 
           <div className="riadokTabulkaMaterialy">
-            <div className='textRiadokZaciatok'>Online materiály pre cvičenie</div>
-            <div className='textRiadokZaciatok'>Podklady pre cvičenie z predmetu</div>
-            <a className='linkFarba' href="https://frios2.fri.uniza.sk/~chochlik/frios/frios/sk.html">
-            <div className='textRiadok'>Link 🔗</div>
+            <div className='materialyTextRiadokZaciatok'>Online materiály pre cvičenie</div>
+            <div className='materialyTextRiadokZaciatok'>Podklady pre cvičenie z predmetu</div>
+            <a className='materialyLinkFarba' href="https://frios2.fri.uniza.sk/~chochlik/frios/frios/sk.html">
+            <div className='materialyTextRiadok'>Link 🔗</div>
             </a>
-            <div className='textRiadok'> </div>
+            <div className='materialyTextRiadok'> </div>
           </div>
 
           <div className="riadokTabulkaMaterialy">
-            <div className='textRiadokZaciatok'>Vlákna</div>
-            <div className='textRiadokZaciatok'>Pomoc pri Makefile</div>
-            <a className='linkFarba' href="https://makefiletutorial.com/">
-            <div className='textRiadok'>Link 🔗</div>
+            <div className='materialyTextRiadokZaciatok'>Vlákna</div>
+            <div className='materialyTextRiadokZaciatok'>Pomoc pri Makefile</div>
+            <a className='materialyLinkFarba' href="https://makefiletutorial.com/">
+            <div className='materialyTextRiadok'>Link 🔗</div>
             </a>
-            <div className='textRiadok'> </div>
+            <div className='materialyTextRiadok'> </div>
           </div>
 
           <div className="riadokTabulkaMaterialy">
-            <div className='textRiadokZaciatok'>Bash - cheat sheet</div>
-            <div className='textRiadokZaciatok'> </div>
-            <a className='linkFarba' href="https://devhints.io/bash">
-            <div className='textRiadok'>Link 🔗</div>
+            <div className='materialyTextRiadokZaciatok'>Bash - cheat sheet</div>
+            <div className='materialyTextRiadokZaciatok'> </div>
+            <a className='materialyLinkFarba' href="https://devhints.io/bash">
+            <div className='materialyTextRiadok'>Link 🔗</div>
             </a>
-            <div className='textRiadok'> </div>
+            <div className='materialyTextRiadok'> </div>
           </div>
           
         </div>

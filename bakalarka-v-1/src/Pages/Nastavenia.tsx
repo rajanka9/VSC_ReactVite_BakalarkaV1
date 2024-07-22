@@ -23,28 +23,50 @@ export const Nastavenia = () => {
     )
 };
 
-
 function NastaveniaKomponentZmenaHesla() {
     return (
       <> 
         <div className="sekciaButtonsNastavenia">
-            <div className="buttonSvetlyNastavenia">Zmeniť heslo</div> 
-            <div className="buttonTmavyNastavenia">Zmeniť kurz</div>
+            <div className="buttonModryNastavenia">Zmeniť heslo</div> 
+            <div className="buttonZlteOramovanieNastavenia">Zmeniť kurz</div>
           </div>
 
           <div className="komponentZmenaHesla">
             <div className="komponentHlavnyNadpis">Zmeniť heslo</div>
+
             <div className="komponentZmenaHeslaRiadok">
               <div className="textPredTextovymPolom">Staré heslo</div>
-              <div className="textovePoleZlte">●●●●●●●●●</div>
+              <div className="nastaveniaTextovePoleSede">●●●●●●●●●</div>
             </div>
             <div className="komponentZmenaHeslaRiadok">
               <div className="textPredTextovymPolom">Nové heslo</div>
-              <div className="textovePoleSede">●●●●●●●●●</div>
+              <div className="nastaveniaTextovePoleSede">●●●●●●●●●</div>
             </div>
             <div className="komponentZmenaHeslaRiadok">
               <div className="textPredTextovymPolom">Potvrdiť nové heslo</div>
-              <div className="textovePoleSede">●●●●●●●●●</div>
+              <div className="nastaveniaTextovePoleSede">●●●●●●●●●</div>
+            </div>
+
+            <div className="komponentButtonZlty">Zmeniť</div>
+          </div>
+
+        </>  
+    );
+  }
+
+  /*vytvorit dropdown komponent to do buducna*/
+  function NastaveniaKomponentZmenaKurzu() {
+    return (
+      <> 
+        <div className="sekciaButtonsNastavenia">
+            <div className="buttonZlteOramovanieNastavenia">Zmeniť heslo</div> 
+            <div className="buttonModryNastavenia">Zmeniť kurz</div>
+          </div>
+
+          <div className="komponentZmenaHesla">
+            <div className="komponentHlavnyNadpis">Zmeniť kurz</div>
+            <div className="komponentZmenaHeslaRiadok">
+              <div className="textPredTextovymPolom">This function will be added in the future</div>
             </div>
             <div className="komponentButtonZlty">Zmeniť</div>
           </div>
@@ -75,3 +97,9 @@ function NastaveniaKomponentZmenaHesla() {
       </>
     );
   }
+
+  //React: How to get input value (dynamic text input field) 
+  // https://www.youtube.com/watch?v=91TIUURx5JM 
+
+  //mobile
+  // https://www.browserstack.com/guide/how-to-make-react-app-responsive

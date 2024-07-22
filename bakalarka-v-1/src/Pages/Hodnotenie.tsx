@@ -49,10 +49,10 @@ function ObrazokNadpisPodnadpisHodnotenie() {
       <>
         <div className='tabulkaDosuhnuteBody'>
           <div className='hodnotenieOranzovyRiadok'>
-            <div className='hodnotenieTextOranzovyZaciatok'>Zápočet</div>
-            <div className='hodnotenieTextOranzovy'>Minimum</div>
-            <div className='hodnotenieTextOranzovy'>Maximum</div>
-            <div className='hodnotenieTextOranzovy'>Dosiahnuté body</div>
+            <div className='hodnotenieTextZaciatokFarba'>Zápočet</div>
+            <div className='hodnotenieTextFarba'>Minimum</div>
+            <div className='hodnotenieTextFarba'>Maximum</div>
+            <div className='hodnotenieTextFarba'>Dosiahnuté body</div>
           </div>
 
           <div className="hodnotenieRiadokTabulka">
@@ -75,10 +75,10 @@ function ObrazokNadpisPodnadpisHodnotenie() {
           </div>
 
           <div className="hodnotenieZelenyRiadok">
-            <div className='hodnotenieTextZelenyZaciatok'>Spolu</div>
-            <div className='hodnotenieTextZeleny'>20</div>
-            <div className='hodnotenieTextZeleny'>50</div>
-            <div className='hodnotenieTextZeleny'>25 ✅</div>
+            <div className='hodnotenieTextZaciatokFarba'>Spolu</div>
+            <div className='hodnotenieTextFarba'>20</div>
+            <div className='hodnotenieTextFarba'>50</div>
+            <div className='hodnotenieTextFarba'>25 ✅</div>
           </div>
         </div>
       </>

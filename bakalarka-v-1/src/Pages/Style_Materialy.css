@@ -5,6 +5,8 @@
     color: #000;
     align-items: center;
     width: 95%;
+
+    margin-bottom: 1%;
 }
 @media (max-width: 991px) {
   .obrazokNadpisPodnadpisMaterialy {
@@ -14,6 +16,9 @@
     align-items: center;
     justify-content: flex-start;
     gap: 8px;
+
+    margin-bottom: 1%;
+    margin-top: 1%;
     }
   }
 
@@ -42,110 +47,303 @@
 
   .nadpisMaterialy {
     text-align: center;
-    font: 700 1.875rem Open Sans, sans-serif;
+    font: 700 1.875rem Open Sans, sans-serif; /*30*/
     max-width: 100%;
   }
+  @media (max-width: 991px) {
+    .nadpisMaterialy {
+      text-align: center;
+      font: 700 1.625rem Open Sans, sans-serif; /*26*/
+      max-width: 100%;
+      }
+    }
 
   .podnadpisMaterialy {
     margin-top: 10px;
     font: 400 1.25rem Open Sans, sans-serif;
     max-width: 1045px;
-}
+  }
+  @media (max-width: 991px) {
+    .podnadpisMaterialy {
+      font: 400 1rem Open Sans, sans-serif; /*16px*/
+      max-width: 100%;
+      }
+    }
 
 
 /*tabulka --------------------------------------------------------------------*/ 
 .tabulkaSLinkami {
     display: flex;
     flex-direction: column;
-    
+    width: 100%;
+    margin-bottom: 2%;
   }
+ 
+  /*Oranzova cast --------------------------------------------------------*/
   .oranzovyRiadokMaterialy {
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: rgba(254, 184, 28, 0.22);
     display: flex;
 
-    width: 100%;
-    gap: 20px;
-    padding: 10px 80px;
-    max-width: 100%;
-    flex-wrap: wrap;
     white-space: initial;
-  }
+    flex-wrap: wrap;
 
-  .textOranzovyZaciatok {
+    max-width: 100%;
+    padding: 10px 2%;
+    gap: 16px;
+  }
+  @media (max-width: 564px) {
+    .oranzovyRiadokMaterialy {
+    justify-content: space-evenly;
+    background-color: rgba(254, 184, 28, 0.22);
+    display: flex;
+
+    white-space: initial;
+    
+    padding: 10px 2.5%;
+    max-width: 95%;
+    gap: 8px;
+    flex-wrap: wrap;
+    }
+  }
+ 
+  .materialyTextOranzovyZaciatok {
     font-family: Open Sans, sans-serif;
     font-size: 1.125rem; /*18px*/
     color: #000;
     font-weight: 700;
-    width: 212px;
+    width: 252px;
     text-align: start;
-  }
 
-  .textOranzovy {
+    /*border: #000 dotted 2px;*/
+  }
+  @media (max-width: 978px) {
+    .materialyTextOranzovyZaciatok {
     font-family: Open Sans, sans-serif;
-    font-size: 1.125rem; /*18px*/
     color: #000;
     font-weight: 700;
-    width: 212px;
+    width: 120px;
+
+    font-size: 1rem; /*16px*/
+    text-align: start;
+    }
+  }
+  @media (max-width: 564px) {
+    .materialyTextOranzovyZaciatok {
+    font-family: Open Sans, sans-serif;
+    color: #000;
+    font-weight: 600;
+    width: 100px;
+
+    font-size: 0.875rem; /*14px*/
+    text-align: start;
+    }
+  }
+  @media (max-width: 406px) {
+    .materialyTextOranzovyZaciatok {
+    font-family: Open Sans, sans-serif;
+    color: #000;
+    font-weight: 600;
+    width: 100px;
+
+    font-size: 0.875rem; /*14px*/
     text-align: center;
+    }
   }
   
-  .riadokTabulkaMaterialy {
-    justify-content: space-between;
-    display: flex;
-    margin-top: 25px;
-    width: 100%;
-    gap: 20px;
-    white-space: nowrap;
-    padding: 0 80px;
+  .materialyTextOranzovy {
+    font-family: Open Sans, sans-serif;
+    font-size: 1.125rem; /*18px*/
+    color: #000;
+    font-weight: 700;
+    width: 110px;
+    text-align: center;
+
+    /*border: #000 dotted 2px;*/
   }
-  @media (max-width: 991px) {
-    .riadokTabulkaMaterialy {
-      max-width: 100%;
-      flex-wrap: wrap;
-      white-space: initial;
-      padding: 0 20px;
+  @media (max-width: 978px) {
+    .materialyTextOranzovy {
+    font-family: Open Sans, sans-serif;
+    color: #000;
+    font-weight: 700;
+    width: 85px;
+
+    font-size: 1rem; /*16px*/
+    text-align: center;
+    }
+  }
+  @media (max-width: 564px) {
+    .materialyTextOranzovy {
+    font-family: Open Sans, sans-serif;
+    color: #000;
+    font-weight: 600;
+    width: 65px;
+
+    font-size: 0.875rem; /*14px*/
+    text-align: center;
     }
   }
 
-  .textRiadokZaciatok{
-    font-family: Open Sans, sans-serif;
-    font-size: 1.125rem; /*18px*/
+  /*Oranzova cast --------------------------------------------------------*/
+
+  /*Biela cast --------------------------------------------------------*/
+  .riadokTabulkaMaterialy {
+    justify-content: space-evenly;
+    display: flex;
+
+    white-space: initial;
+    flex-wrap: wrap;
+
+    max-width: 100%;
+    padding: 5px 2%;
+    gap: 16px;
+  }
+  @media (max-width: 564px) {
+    .riadokTabulkaMaterialy {
+    justify-content: space-evenly;
+    display: flex;
+    white-space: initial;
     
-    width: 212px;
-    text-align: start;
+    padding: 10px 2.5%;
+    max-width: 95%;
+    gap: 8px;
+    flex-wrap: wrap;
+    }
   }
 
-  .textRiadok{
+  .materialyTextRiadokZaciatok{
     font-family: Open Sans, sans-serif;
-    font-size: 1.125rem; /*18px*/
+    font-size: 1rem; /*16px*/
+    
+    width: 252px;
+    text-align: start;
+    
+    /*border: #000 dotted 2px;*/
+  }
+  @media (max-width: 978px) {
+    .materialyTextRiadokZaciatok {
+    font-family: Open Sans, sans-serif;
+    color: #000;
+    width: 120px;
 
-    width: 212px;
+    font-size: 0.875rem; /*14px*/
+    text-align: start;
+    }
+  }
+  @media (max-width: 564px) {
+    .materialyTextRiadokZaciatok {
+    font-family: Open Sans, sans-serif;
+    color: #000;
+    width: 100px;
+
+    font-size: 0.75rem; /*12px*/
+    text-align: start;
+    }
+  }
+  @media (max-width: 406px) {
+    .materialyTextRiadokZaciatok {
+      font-family: Open Sans, sans-serif;
+      color: #000;
+      width: 100px;
+  
+      font-size: 0.75rem; /*12px*/
+      text-align: center;
+      }
+    }
+
+  .materialyTextRiadok{
+    font-family: Open Sans, sans-serif;
+
     text-align: center;
     text-decoration: underline;
 
+    font-size: 1rem; /*16px*/
+    width: 110px;
+    /*border: #000 dotted 2px;*/
+  }
+  @media (max-width: 978px) {
+    .materialyTextRiadok {
+      font-family: Open Sans, sans-serif;
+
+      text-align: center;
+      text-decoration: underline;
+  
+      font-size: 0.875rem; /*14px*/
+      width: 85px;
+    }
+  }
+  @media (max-width: 564px) {
+    .materialyTextRiadok {
+      font-family: Open Sans, sans-serif;
+
+      text-align: center;
+      text-decoration: underline;
+  
+      font-size: 0.75rem; /*12px*/
+      width: 65px;
+    }
   }
 
-  .textRiadok:hover{
+  .materialyTextRiadok:hover{
     font-family: Open Sans, sans-serif;
-    font-size: 1.125rem; /*18px*/
+    font-size: 1rem; /*16px*/
     font-weight: 700;
     
-
-    width: 212px;
+    width: 110px;
     text-align: center;
 
     color: #223673;
     text-decoration: underline;
-
+  }
+  @media (max-width: 978px) {
+    .materialyTextRiadok:hover {
+      font-family: Open Sans, sans-serif;
+      font-weight: 700;
+      text-align: center;
+      text-decoration: underline;
+  
+      font-size: 0.875rem; /*14px*/
+      width: 85px;
+      color: #223673;
+    }
+  }
+  @media (max-width: 564px) {
+    .materialyTextRiadok:hover  {
+      font-family: Open Sans, sans-serif;
+      font-weight: 700;
+      text-align: center;
+      text-decoration: underline;
+  
+      font-size: 0.75rem; /*12px*/
+      width: 65px;
+      color: #223673;
+    }
   }
   
-  .linkFarba {
+  .materialyLinkFarba {
     font-family: Open Sans, sans-serif;
-    font-size: 1.125rem; /*18px*/
-    /*color: #000000;*/
     font-weight: 600;
 
-    width: 212px;
+    width: 110px;
     text-align: center;
   }
+  @media (max-width: 978px) {
+    .materialyLinkFarba {
+    font-family: Open Sans, sans-serif;
+    font-weight: 600;
+
+    width: 85px;
+    text-align: center;
+    }
+  }
+  @media (max-width: 564px) {
+    .materialyLinkFarba {
+    font-family: Open Sans, sans-serif;
+    font-weight: 600;
+
+    width: 65px;
+    text-align: center;
+    }
+  }
+
+/*Biela cast --------------------------------------------------------*/

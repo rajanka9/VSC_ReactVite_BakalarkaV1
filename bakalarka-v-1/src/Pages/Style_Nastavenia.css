@@ -1,4 +1,4 @@
-divNastaveniaRow {
+/*.divNastaveniaRow {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -6,7 +6,7 @@ divNastaveniaRow {
   width: 100%;
   padding-top: 145px;
   padding-bottom: 5%;
-}
+}*/
 
 /*.divNastaveniaColumn {
       padding-top: 145px;
@@ -24,30 +24,37 @@ divNastaveniaRow {
       gap: 10px;
       color: #000;
       align-items: center;
-      width: 100%;
+      width: 95%;
       /*margin-top: 25px;*/
     }
-    @media (max-width: 991px) {
-      .obrazokNadpisPodnadpisMaterialy {
-        flex-wrap: wrap;
-      }
-    }
-    @media (max-width: 640px) {
-    .obrazokNadpisPodnadpisMaterialy {
+    
+    @media (max-width: 657px) {
+    .nastaveniaObrazokNadpisPodnadpis {
       align-self: center;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
+      gap: 5px;
+
+      margin-bottom: 1%;
+      margin-top: 1%;
       }
     }
-
+    
     .imgNastavenia {
       aspect-ratio: 1;
       object-fit: auto;
       object-position: center;
       width: 7rem;
       max-width: 100%;
+    }
+    @media (max-width: 657px) {
+    .imgNastavenia {
+      object-fit: auto;
+      object-position: center;
+      width: 6rem;
+      }
     }
 
     .nastaveniaNadpisPodnadpis {
@@ -59,61 +66,87 @@ divNastaveniaRow {
       /*margin: auto auto auto 0;*/
       padding: 0 20px;
     }
-    @media (max-width: 991px) {
+    @media (max-width: 657px) {
       .nastaveniaNadpisPodnadpis {
         max-width: 100%;
-      }
+        
+        }
     }
-    
+
     .nadpisNastavenia {
       text-align: center;
       /*margin-right: auto;*/
       font: 700 1.875rem Open Sans, sans-serif; /*30*/
     }
-    @media (max-width: 991px) {
+    @media (max-width: 657px) {
+      .nadpisNastavenia {
+        text-align: start;
+        font: 700 1.625rem Open Sans, sans-serif; /*26*/      }
+    }
+    /*@media (max-width: 991px) {
       .nadpisNastavenia {
         max-width: 100%;
       }
-    }
+    }*/
+
     .podnadpisNastavenia {
       margin-top: 10px;
       font: 400 1.25rem Open Sans, sans-serif; /*20*/
+    }@media (max-width: 657px) {
+      .podnadpisNastavenia {
+        font: 400 1rem Open Sans, sans-serif; /*16px*/
+      }
     }
-    
+
+    /*
     @media (max-width: 991px) {
       .podnadpisNastavenia {
         max-width: 100%;
       }
-    }
+    }*/
 
     /*sekcia buttons ----------------------------------------------------------------*/
     .sekciaButtonsNastavenia {
       align-self: start;
       display: flex;
-      gap: 20px;
-      font-size: 1rem;
-      font-weight: 700;
+      gap: 16px;
       text-align: center;
       justify-content: start;
       width: 100%;
-
     }
-    @media (max-width: 991px) {
+    @media (max-width: 360px) {
       .sekciaButtonsNastavenia {
         flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
       }
     }
-
-    .buttonSvetlyNastavenia {
+    
+    .buttonModryNastavenia {
       font-family: Open Sans, sans-serif;
       justify-content: center;
       border-radius: 10px;
       background-color: #223673;
       color: #fff;
-      padding: 14px 20px;
+      border-radius: 10px;
+      border-color: rgba(34, 54, 115, 1);
+      border-style: solid;
+      
+      border-width: 3px;
+      padding: 12px 20px;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+    @media (max-width: 657px) {
+      .buttonModryNastavenia {
+        max-width: 100%;
+        padding: 12px 20px;
+        border-width: 2px;
+        font-size: 0.875rem;
+        }
     }
 
-    .buttonTmavyNastavenia {
+    .buttonZlteOramovanieNastavenia {
       font-family: Open Sans, sans-serif;
       justify-content: center;
       border-radius: 10px;
@@ -122,10 +155,22 @@ divNastaveniaRow {
       border-width: 3px;
       background-color: #fff;
       color: rgba(34, 54, 115, 1);
-      padding: 14px 20px;
+      
+      padding: 12px 20px;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+    @media (max-width: 657px) {
+      .buttonZlteOramovanieNastavenia {
+        max-width: 100%;
+        padding: 12px 20px;
+        border-width: 2px;
+
+        font-size: 0.875rem;
+        }
     }
 
-    .buttonTmavyNastavenia:hover {
+    .buttonZlteOramovanieNastavenia:hover {
       font-family: Open Sans, sans-serif;
       justify-content: center;
       border-radius: 10px;
@@ -133,10 +178,23 @@ divNastaveniaRow {
       border-style: solid;
       border-width: 3px;
       background-color: #fff;
-      padding: 14px 20px;
+      padding: 12px 20px;
 
       color: rgb(0, 0, 0);
+
+      font-size: 1rem;
+      font-weight: 700;
     }
+    @media (max-width: 657px) {
+      .buttonZlteOramovanieNastavenia:hover {
+        max-width: 100%;
+        padding: 12px 20px;
+        border-width: 2px;
+
+        font-size: 0.875rem;
+        }
+    }
+    
 
     /*sekcia komponenty na zmenu XY -------------------------------------------------------------*/
     .komponentZmenaHesla {
@@ -145,29 +203,31 @@ divNastaveniaRow {
       display: flex;
 
       width: 100%;
+      height: 100%;
       flex-direction: column;
       color: #000;
       font-weight: 400;
       padding: 1% 1.5%;
-      gap: 5px;
+      gap: 8px;
 
     }
-    @media (max-width: 991px) {
+    @media (max-width: 657px) {
       .komponentZmenaHesla {
-        max-width: 100%;
-        padding: 0 16px;
+        gap: 6px;
       }
     }
+
     .komponentHlavnyNadpis {
           text-align: left;
           margin-right: auto;
           width: 100%;
-          font: 700 20px Open Sans, sans-serif;
-          margin-bottom: 10px;
+          font: 700 1.25rem Open Sans, sans-serif;
+          margin-bottom: 8px;
+          margin-top: 8px;
     }
-    @media (max-width: 991px) {
-      .komponentHlavnyNadpis {
-        max-width: 100%;
+    @media (max-width: 657px) {
+      .textPredTextovymPolom {
+        font: 700 1rem Open Sans, sans-serif;
       }
     }
 
@@ -181,8 +241,11 @@ divNastaveniaRow {
       .komponentZmenaHeslaRiadok {
         max-width: 100%;
         flex-wrap: wrap;
+        gap: 5px;
+        margin-bottom: 8px;
       }
     }
+
     .textPredTextovymPolom {
       width: 27%;
       text-align: left;
@@ -191,29 +254,21 @@ divNastaveniaRow {
       margin: auto 0;
       font: 16px Open Sans, sans-serif;
     }
-
-    .textovePoleZlte {
-      align-items: start;
-          border-radius: 10px;
-          border-color: rgba(254, 184, 28, 1);
-          border-style: solid;
-          border-width: 2px;
-          background-color: #fff;
-          white-space: nowrap;
-          justify-content: center;
-          width: 100%;
-          padding: 10px 16px;
-          font: 16px Open Sans, sans-serif;
+    @media (max-width: 657px) {
+      .textPredTextovymPolom {
+        text-align: start;
+        font: 0.875rem Open Sans, sans-serif;
+      }
     }
-    @media (max-width: 991px) {
-      .textovePoleZlte {
-        max-width: 100%;
-        padding-right: 20px;
+    @media (max-width: 642px) {
+      .textPredTextovymPolom {
+        width: 90%;
+        padding-right: 16px;
         white-space: initial;
       }
     }
-    
-    .textovePoleSede {
+
+    .nastaveniaTextovePoleSede {
       align-items: start;
       border-radius: 10px;
       border-color: rgba(0, 0, 0, 0.5);
@@ -224,15 +279,29 @@ divNastaveniaRow {
       justify-content: center;
       width: 100%;
       padding: 10px 16px;
-      font: 16px Open Sans, sans-serif;
-      margin-top: 8px;
+      font: 1rem Open Sans, sans-serif;
     }
-    @media (max-width: 991px) {
+    /*@media (max-width: 991px) {
       .textovePoleSede {
         max-width: 100%;
         padding-right: 20px;
         white-space: initial;
       }
+    }*/
+    @media (max-width: 657px) {
+      .nastaveniaTextovePoleSede {
+        font: 0.875rem Open Sans, sans-serif;
+        padding: 8px 16px;
+
+      }
+    }
+
+    .nastaveniaTextovePoleSede:hover {
+      border-color: rgba(254, 184, 28, 1);
+    }
+
+    .nastaveniaTextovePoleSede:active {
+      border-color: rgba(254, 184, 28, 1);
     }
     
     .komponentButtonZlty {
@@ -240,7 +309,8 @@ divNastaveniaRow {
       border-radius: 10px;
       background-color: #feb81c;
       align-self: end;
-      margin-top: 10px;
+      margin-top: 8px;
+      margin-bottom: 8px;
       white-space: nowrap;
       text-align: center;
       padding: 14px 20px;
@@ -253,15 +323,6 @@ divNastaveniaRow {
     }
 
     .komponentButtonZlty:hover {
-      justify-content: center;
-      border-radius: 10px;
-      background-color: #feb81c;
-      align-self: end;
-      margin-top: 10px;
-      white-space: nowrap;
-      text-align: center;
-      padding: 14px 20px;
-      font: 700 1rem Open Sans, sans-serif;
       color: #ffffff;
     }
 
