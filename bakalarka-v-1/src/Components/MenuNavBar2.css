@@ -1,0 +1,89 @@
+
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors*/
+
+.menuNavBar2 {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+.menuNavBar2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #FEB81C;
+    flex-wrap: wrap;
+    width: 100%;
+
+    position: fixed;
+    top: 106px;
+  
+    height: max-content;
+    padding-top: 10px;
+    padding-bottom: 16px;
+
+    z-index: 5;
+}
+  
+.menuNavBar2Wrapper{
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+  
+.menuNavBarText {
+color: #000000;
+text-align: center;
+font-family: 'Open Sans', sans-serif;
+font-style: normal;
+font-weight: 600;
+line-height: 6px;
+min-width: max-content;
+
+font-size: 1rem; 
+}
+  
+.bezHover{
+    pointer-events: none;
+    line-height: 6px;
+    
+  }
+  /*https://www.quora.com/How-do-you-remove-the-hover-effect-on-an-image-using-CSS */
+  /*https://www.youtube.com/watch?v=biOMz4puGt8*/
+.menuNavBarText:hover {
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 6px;
+    transition: 300ms ease; 
+
+    font-size: 	1rem;
+
+}  
+
+  .menuframePodstranky {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+
+    height: fit-content;
+  }
+  
+  .menuFrameJazykyOdhlasenie {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    gap: 56px;
+  }
+  
+  .menuJazyky{
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: nowrap;
+
+    height: 16px;
+  }
+}

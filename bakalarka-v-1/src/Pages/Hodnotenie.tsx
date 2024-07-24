@@ -4,14 +4,20 @@ import "./Centrovanie.css"
 import "./Style_Hodnotenie.css"
 import { NavBar1 } from '../Components/NavBar1';
 import { NavBar2 } from "../Components/NavBar2";
+import { MenuNavBar2 } from "../Components/MenuNavBar2";
+import { useState } from "react";
+
 
 import imgDosiahnuteVysledky from "../assets/img_dosiahnuteVysledky.png"
 
 export const Hodnotenie = () => {
-    return (
+  const[clicked, isClicked] = useState (false)
+  
+  return (
     <div>
         <NavBar1 />
-        <NavBar2 />
+        <NavBar2 clicked={clicked} isClicked={isClicked} />
+        {clicked? <MenuNavBar2/> : null}
         
         <div className="divPodListami">
           <ObrazokNadpisPodnadpisHodnotenie />

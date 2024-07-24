@@ -1,9 +1,150 @@
 
 /*https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors*/
 
+div {
+  align-items: center;
+}
 
+.navBarPozadieHL2 {
+  background-color: #FEB81C;
+  top: 65px;
+  position: fixed;
 
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
 
+  width: 100%;
+  height: max-content;
+
+  z-index: 5;
+  /*
+  
+  */
+}
+
+.navBarWrapper{
+  display: flex;
+  
+  width: 100vw;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: space-between;
+}
+
+h2 {
+  color: #000000;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.125rem; 
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  min-width: max-content;
+}
+
+.bezHover{
+  pointer-events: none;
+}
+/*https://www.quora.com/How-do-you-remove-the-hover-effect-on-an-image-using-CSS */
+/*https://www.youtube.com/watch?v=biOMz4puGt8*/
+h2:hover {
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 	1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  transition: 300ms ease;
+
+}  
+
+.framePodstranky {
+  display: inline-flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 18px;
+}
+
+.divProfile{
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 12.5px;
+}
+
+/*neskor pridat aby nebolo vidiet v nastaveniach*/
+.divProfileNormal{
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 12.5px;
+}
+
+.frameJazykyOdhlasenie {
+  display: inline-flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 20px;
+
+}
+
+.jazyky{
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 8px;
+  flex-wrap: nowrap;
+}
+
+.iconsNavBar2 {
+display: none;
+
+color: #ffffff;
+font-size: 24px;
+cursor: pointer;
+}
+
+.divProfileResponsiveBar{
+  display: none;
+
+}
+
+@media screen and (max-width: 1024px) {
+  
+  .divProfileResponsiveBar{
+    display: inline-flex;
+    align-items: flex-start;
+
+    margin-right: 16px;
+   }
+
+  .navBarWrapper {
+    display: none;
+  }
+
+  .framePodstranky{
+    display: none;
+  }
+
+  .frameJazykyOdhlasenie {
+    display: none;
+  }
+
+  .iconsNavBar2 {
+    display: flex;
+    margin-right: 16px;
+    padding-right: 16px;
+
+    }
+
+    .navBarPozadieHL2 {
+      display: flex;
+      padding-left: 16px;
+      padding-right: 50px;
+      justify-content: space-between;
+    }
+
+}
 
 /*
 Pred upravou podla videa - https://www.youtube.com/watch?v=tFvixxAXM4g

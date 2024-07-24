@@ -3,6 +3,7 @@ import "./Centrovanie.css"
 import "./Style_TerminyRozvrh.css"
 import { NavBar1 } from '../Components/NavBar1';
 import { NavBar2 } from "../Components/NavBar2";
+import { MenuNavBar2 } from "../Components/MenuNavBar2";
 
 import React, { useState } from "react";
 
@@ -24,10 +25,13 @@ const renderComponent = () => {
   }
 };
 
+const[clicked, isClicked] = useState (false)
+
     return (
     <div>
         <NavBar1 />
-        <NavBar2 />
+        <NavBar2 clicked={clicked} isClicked={isClicked} />
+        {clicked? <MenuNavBar2/> : null}
 
         <div className="divPodListami"> 
         {renderComponent()}

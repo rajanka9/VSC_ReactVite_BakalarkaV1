@@ -20,27 +20,24 @@
   top: 125px;
   translate: auto -125px;
 
-  border: #ff0000 5px dotted;
-
   /*padding-left: 1%;
-  padding-right: 1%;*/
+  padding-right: 1%;
 
-  /*border: #ff0000 5px dotted;*/
+  border: #ff0000 5px dotted;*/
 
   }
-  @media (max-width: 1024px) {
+  @media (max-width: 900px) {
     .divPodListami {  
       overflow-y:scroll;
       height: 80%;
       margin-left: 4%;
       margin-right: 4%;
       width: 90vw;
-      
+
       gap: 16px;
       justify-content: center; /* Center the flex items (centered-div) horizontaly */
       align-items: flex-start; /*yva os*/
       align-content: flex-start; /*aby to bolo hore?*/
-
     
     }
   }

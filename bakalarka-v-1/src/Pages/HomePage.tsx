@@ -6,17 +6,23 @@ import { NavBar1 } from '../Components/NavBar1';
 import { NavBar2 } from "../Components/NavBar2";
 import { BoxCvicenie } from "../Components/BoxRozvrh"
 import { BoxOznam } from "../Components/BozOznam"
+import { MenuNavBar2 } from "../Components/MenuNavBar2";
 
+import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+
 
 //interface Props {}
 // const HomePage = (props: Props) => {
 
 export const HomePage = () => {
+    const[clicked, isClicked] = useState (false)
+
     return (
     <div>
         <NavBar1 />
-        <NavBar2 />
+        <NavBar2 clicked={clicked} isClicked={isClicked} />
+        {clicked? <MenuNavBar2/> : null}
 
         <div className="divPodListami"> 
 
@@ -36,6 +42,9 @@ export const HomePage = () => {
     </div>
     )
 };
+
+/*{clicked? <MenuNavBar2/> : null}
+*/
 
 function BoxProfilVybrateCvZmenyNastavenia() {
     return (
