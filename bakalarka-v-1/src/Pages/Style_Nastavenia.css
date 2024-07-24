@@ -195,7 +195,6 @@
         }
     }
     
-
     /*sekcia komponenty na zmenu XY -------------------------------------------------------------*/
     .komponentZmenaHesla {
       border-radius: 10px;
@@ -300,8 +299,9 @@
       border-color: rgba(254, 184, 28, 1);
     }
 
-    .nastaveniaTextovePoleSede:active {
+    .nastaveniaTextovePoleSede:focus {
       border-color: rgba(254, 184, 28, 1);
+      outline: none; /*na odstranenie modreho dacoho - https://www.w3schools.com/css/css_form.asp*/
     }
     
     .komponentButtonZlty {

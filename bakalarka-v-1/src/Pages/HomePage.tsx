@@ -12,7 +12,6 @@ import { Link, NavLink } from "react-router-dom";
 //interface Props {}
 // const HomePage = (props: Props) => {
 
-
 export const HomePage = () => {
     return (
     <div>
@@ -103,6 +102,25 @@ function BoxOznamy() {
         </div>
 
         <div className="boxOznamyScroll">
+
+        <BoxOznam
+        teachersNameOznam= "P. Sedlacek"
+        dateOznam= "29.9.2024 9:29"
+        noteOznam= "Oznam Test - Sed non nibh quis nibh tempor vestibulum. Sed mattis vulputate risus nec suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        />
+
+        <BoxOznam
+        teachersNameOznam= "P. Sedlacek"
+        dateOznam= "29.9.2024 9:29"
+        noteOznam= "Oznam Test - Sed non nibh quis nibh tempor vestibulum. Sed mattis vulputate risus nec suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed non nibh quis nibh tempor vestibulum. Sed mattis vulputate risus nec suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        />
+
+        <BoxOznam
+        teachersNameOznam= "P. Sedlacek"
+        dateOznam= "29.9.2024 9:29"
+        noteOznam= "Oznam Test - Sed non nibh quis nibh tempor vestibulum. Sed mattis vulputate risus nec suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        />
+
         <BoxOznam
         teachersNameOznam= "P. Sedlacek"
         dateOznam= "29.9.2024 9:29"
@@ -118,9 +136,10 @@ function BoxOznamy() {
         <BoxOznam
         teachersNameOznam= "P. Sedlacek"
         dateOznam= "29.9.2024 9:29"
-        noteOznam= "Oznam Test - Sed non nibh quis nibh tempor vestibulum. Sed mattis vulputate risus nec suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        noteOznam= "Oznam Test - Sed non nibh quis nibh tempor vestibulum. Sed mattis vulputate risus nec suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed non nibh quis nibh tempor vestibulum. Sed mattis vulputate risus nec suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         />
         </div>
+
     </div>
 
     </>

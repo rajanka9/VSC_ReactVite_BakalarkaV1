@@ -7,16 +7,21 @@
     border-width: 4px;
     background-color: #fff;
     display: flex;
-    width: 150px;
     flex-grow: 1;
     flex-direction: column;
-    
     color: #000;
-    font-size: 16px;
     text-align: center;
-    margin: 0 auto;
-    padding: 12px 10px;
+    
+    font-size: 16px;
+    padding: 10px 26px;
+    /*width: 145px;*/
   }
+  @media (max-width: 1024px) {
+    .boxCvicenie {
+      font-size: 14px;
+      padding: 10px 24px;
+      }
+    }
 
   .boxCvicenie:hover {
     justify-content: center;
@@ -27,37 +32,20 @@
     border-width: 4px;
     background-color:#FEB81C;
     display: flex;
-    width: 150px;
     flex-grow: 1;
     flex-direction: column;
     
     color:  #ffffff; 
-    font-size: 16px;
     text-align: center;
-    margin: 0 auto;
-    padding: 12px 10px;
-  }
 
-  /*
-  .boxCvicenie:hover {
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    border-color: #FEB81C;
-    border-style: solid;
-    border-width: 4px;
-    background-color:rgba(34, 54, 115, 1);
-    display: flex;
-    width: 150px;
-    flex-grow: 1;
-    flex-direction: column;
-    
-    color:  #fff; 
     font-size: 16px;
-    text-align: center;
-    margin: 0 auto;
-    padding: 12px 10px;
-  }*/
+    padding: 10px 26px;
+  } @media (max-width: 1024px) {
+    .boxCvicenie:hover {
+      font-size: 14px;
+      padding: 10px 24px;
+      }
+    }
 
   .centrovanieVRiadku {
     justify-content: center;

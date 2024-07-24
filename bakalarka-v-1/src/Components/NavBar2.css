@@ -1,5 +1,12 @@
+
 /*https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors*/
 
+
+
+
+
+/*
+Pred upravou podla videa - https://www.youtube.com/watch?v=tFvixxAXM4g
 div {
     align-items: center;
 }
@@ -21,7 +28,7 @@ div {
     color: #000000;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.125rem; /*19px*/
+    font-size: 1.125rem; 19px
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -29,15 +36,16 @@ div {
 
   .bezHover{
     pointer-events: none;
-    /*https://www.quora.com/How-do-you-remove-the-hover-effect-on-an-image-using-CSS */
   }
 
+  /*https://www.quora.com/How-do-you-remove-the-hover-effect-on-an-image-using-CSS */
   /*https://www.youtube.com/watch?v=biOMz4puGt8*/
-  h2:hover {
+  
+  /*h2:hover {
     color: #ffffff;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    font-size: 	1.125rem; /*19px*/
+    font-size: 	1.125rem; 19px
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -70,6 +78,99 @@ div {
     display: inline-flex;
     align-items: flex-start;
     gap: 8px;
-  }
+  }*/
   
   /*random pridanie komentu*/
+
+/*
+ChatGPT ------------------------------------------------------------
+div {
+  align-items: center;
+}
+
+.pozadieHL2 {
+  background-color: #FEB81C;
+  top: 65px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+  flex-shrink: 2;
+}
+
+h2 {
+  color: #000000;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.125rem; 
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.bezHover {
+  pointer-events: none;
+}
+
+h2:hover {
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.125rem; 
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  transition: 300ms ease;
+}
+
+.frame1 {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding-left: 35px;
+}
+
+.divProfile {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 12.5px;
+}
+
+.frame2 {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding-right: 35px;
+}
+
+.jazyky {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.menuIcon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background-color: #FEB81C;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.dropdownMenu h2 {
+  color: #000000;
+}
+
+.dropdownMenu h2:hover {
+  color: #ffffff;
+}*/

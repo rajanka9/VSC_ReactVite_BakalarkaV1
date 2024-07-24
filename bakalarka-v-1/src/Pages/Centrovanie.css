@@ -8,29 +8,47 @@
   
   /*margin-top: 70px;*/
   gap: 20px;
-  border: #ff0000 5px dotted;
   /*margin-top: 125px;*/
 
-  margin-left: 8%;
-  margin-right: 8%;
+  margin-left: 7%;
+  margin-right: 7%;
 
   width: 84vw;
-
   flex-wrap: wrap;
   
   position: fixed;
   top: 125px;
   translate: auto -125px;
 
+  border: #ff0000 5px dotted;
+
   /*padding-left: 1%;
   padding-right: 1%;*/
+
+  /*border: #ff0000 5px dotted;*/
+
+  }
+  @media (max-width: 1024px) {
+    .divPodListami {  
+      overflow-y:scroll;
+      height: 80%;
+      margin-left: 4%;
+      margin-right: 4%;
+      width: 90vw;
+      
+      gap: 16px;
+      justify-content: center; /* Center the flex items (centered-div) horizontaly */
+      align-items: flex-start; /*yva os*/
+      align-content: flex-start; /*aby to bolo hore?*/
+
+    
+    }
   }
 
   @media (max-width: 700px) {
     .divPodListami {
       display: flex; 
       flex-direction: row;
-      
       justify-content: center; /* Center the flex items (centered-div) horizontaly */
       align-items: flex-start; /*yva os*/
       align-content: flex-start; /*aby to bolo hore?*/
@@ -38,20 +56,21 @@
       
       /*margin-top: 70px;*/
       gap: 16px;
-      border: #ff0000 5px dotted;
       /*margin-top: 125px;*/
     
-      margin-left: 5%;
-      margin-right: 6%;
+      margin-left: 4%;
+      margin-right: 4%;
     
-      width: 88vw;
-      height: 84vh;
-      overflow-y:scroll;
+      width: 90vw;
+      /*height: 84vh;*/
+      height: 80%;
 
-    }
+      border: #ff0000 5px dotted;
+      overflow-y:scroll;
   }
+}
 
   /*
   flex-direction: column;
   justify-content: flex-start; /* Center the flex items (centered-div) vertically */
-  /*align-items: center; /*Xva os*/
+  /*align-items: center; /*Xva os

@@ -43,7 +43,6 @@ export const BoxCvicenie : React.FC<Props> = ({teachersName, classRoom, timeInSc
     );
   };
 
-  
   BoxCvicenie.defaultProps = {
     teachersName: 'M. Priezvisko',
     classRoom: 'PO000',
